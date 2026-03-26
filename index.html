@@ -11,17 +11,17 @@
 :root{
   --black:#0a0a0a;--off-white:#f7f5f2;--warm-white:#faf9f7;
   --gold:#c9a96e;--gold-dim:rgba(201,169,110,0.13);--gold-border:rgba(201,169,110,0.28);
-  --mid:#5a5a5a;--light:#999;--border:rgba(0,0,0,0.08);--border-strong:rgba(0,0,0,0.13);
+  --mid:#3a3a3a;--light:#6b6b6b;--border:rgba(0,0,0,0.09);--border-strong:rgba(0,0,0,0.15);
   --panel:#f2f0ec;--blue-accent:#1a3a5c;--teal:#0f4c5c;
   --green:#16a34a;--red:#dc2626;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:18px}
+html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--black);overflow-x:hidden}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--gold)}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:72px;background:rgba(247,245,242,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:64px;background:rgba(247,245,242,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s}
 nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 .nav-wordmark{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.04em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:0.4rem}
 .nav-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block}
@@ -59,7 +59,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 .scroll-txt{font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(247,245,242,0.22)}
 
 /* SECTION */
-.section{padding:5.5rem 4rem;max-width:1440px;margin:0 auto;opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.section{padding:5.5rem 4rem;max-width:1280px;margin:0 auto;opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
 .section.in{opacity:1;transform:none}
 .slabel{display:flex;align-items:center;gap:1rem;margin-bottom:3.2rem}
 .slabel-num{font-size:0.56rem;font-weight:500;letter-spacing:0.15em;color:var(--gold)}
@@ -89,7 +89,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 .philosophy-block p{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--off-white);line-height:1.65}
 
 /* CASES */
-.cases-wrap{padding:0 4rem;max-width:1440px;margin:0 auto}
+.cases-wrap{padding:0 4rem;max-width:1280px;margin:0 auto}
 .cases-table{width:100%;border-collapse:collapse}
 .cases-table th{font-size:0.51rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--light);padding:0.75rem 1.4rem;border-bottom:1px solid var(--border-strong);text-align:left}
 .cases-table td{padding:1.4rem 1.4rem;border-bottom:1px solid var(--border);vertical-align:top}
@@ -128,7 +128,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 /* CAMPAIGN */
 .campaign-shell{background:var(--black);padding:5rem 4rem;position:relative;overflow:hidden}
 .camp-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.025) 1px,transparent 1px);background-size:50px 50px;pointer-events:none}
-.camp-inner{max-width:1440px;margin:0 auto;position:relative;z-index:2}
+.camp-inner{max-width:1280px;margin:0 auto;position:relative;z-index:2}
 .camp-kicker{font-size:0.54rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem}
 .camp-headline{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,5vw,4rem);font-weight:400;color:var(--off-white);line-height:1.05;margin-bottom:0.4rem}
 .camp-headline em{font-style:italic;color:var(--gold)}
@@ -160,7 +160,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 .agent-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease}
 .agent-card:hover::before{transform:scaleX(1)}
 .agent-head{padding:1.3rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start}
-.agent-num{font-size:0.48rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
+.agent-num{font-size:0.42rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
 .agent-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:400;color:var(--black);line-height:1.2}
 .agent-live{display:flex;align-items:center;gap:0.32rem;font-size:0.46rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid)}
 .live-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:pulseDot 2s infinite}
@@ -219,7 +219,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 .cv-exp-co{font-size:0.54rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.65rem}
 .cv-bullets{list-style:none;display:flex;flex-direction:column;gap:0.38rem}
 .cv-bullets li{font-size:0.62rem;line-height:1.72;color:var(--mid);padding-left:0.9rem;position:relative}
-.cv-bullets li::before{content:'–';position:absolute;left:0;color:var(--gold)}
+.cv-bullets li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:0.5rem;top:0.1rem}
 .cv-bullets li strong{color:var(--black);font-weight:500}
 .cv-section-divider{font-size:0.48rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);padding:0.65rem 0;border-top:1px solid var(--gold-border);border-bottom:1px solid var(--gold-border);margin-bottom:1.4rem;margin-top:0.4rem}
 .cv-dl{display:inline-flex;align-items:center;gap:0.65rem;font-size:0.54rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--off-white);background:var(--black);padding:0.8rem 1.6rem;text-decoration:none;border:1px solid var(--black);transition:all 0.22s;margin-top:1.4rem}
@@ -228,7 +228,7 @@ nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
 /* CONTACT */
 .contact-shell{background:var(--black);padding:6.5rem 4rem;position:relative;overflow:hidden}
 .contact-glow{position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(15,76,92,0.38) 0%,transparent 70%);pointer-events:none}
-.contact-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
+.contact-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
 .contact-eyebrow{font-size:0.54rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.65rem}
 .contact-eyebrow::before{content:'';width:16px;height:1px;background:var(--gold)}
 .contact-hl{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.8vw,3.2rem);font-weight:400;color:var(--off-white);line-height:1.1;margin-bottom:1.1rem}
@@ -312,12 +312,14 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
       <div class="track-badge saas"><span class="track-pip"></span>Pre-Sales &amp; Implementation — SaaS</div>
       <div class="track-badge saas" style="border-color:rgba(15,76,92,0.45);color:#3a8a9a"><span class="track-pip" style="background:#3a8a9a"></span>Customer Success Management</div>
       <div class="track-badge mktg"><span class="track-pip"></span>Trade Marketing · Brand Strategy</div>
+      <div class="track-badge saas" style="border-color:rgba(139,92,246,0.45);color:#a78bfa"><span class="track-pip" style="background:#a78bfa"></span>AI &amp; Agentic Technologies</div>
     </div>
     <div class="hero-bottom">
-      <p class="hero-statement">Three years winning deals, delivering implementations, owning client success — and building brands that perform at shelf.</p>
+      <p class="hero-statement">Three years closing deals, deploying ERP across 50+ factory sites, owning 15+ client accounts — and building AI-powered tools that compress weeks of analysis into minutes.</p>
       <div class="hero-stats">
         <div><div class="hs-num">50<span>+</span></div><div class="hs-label">Sites Deployed</div></div>
         <div><div class="hs-num">15<span>%</span></div><div class="hs-label">Avg DHU Reduction</div></div>
+        <div><div class="hs-num">15<span>+</span></div><div class="hs-label">Accounts Managed</div></div>
         <div><div class="hs-num">3</div><div class="hs-label">Countries</div></div>
       </div>
     </div>
@@ -330,27 +332,21 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
   <div class="slabel"><span class="slabel-num">01</span><div class="slabel-rule"></div><h2 class="slabel-text">About</h2></div>
   <div class="about-grid">
     <div>
-      <p class="about-p">I close deals, deliver implementations, retain clients — and build brands. Often in the same month.</p>
-      <p class="about-sm">With a background in Fashion Technology (NIFT, New Delhi) and a Masters in Luxury &amp; Fashion Management (Paris School of Business), I spent three years at Solvei8 in three interlocking roles: pre-sales consultant supporting the sales cycle, implementation lead owning post-contract delivery, and customer success manager maintaining and growing 15+ accounts across garment factories in India, Vietnam, and Bangladesh.</p>
-      <p class="about-sm">At pre-sales I ran discovery workshops, demoed the product suite to factory leadership, built ROI models, and helped close deals. Post-sale, I owned deployment: workflow mapping, ERP integration, training workforces of 10–300+. Then post-go-live, I stayed with the client — running monthly performance reviews, identifying upsell opportunities, managing escalations, and ensuring each account delivered measurable outcomes and renewed.</p>
+      <p class="about-p">I close deals, deliver ERP implementations across three countries, retain 15+ accounts — and build AI agents that automate the work that used to take a team.</p>
+      <p class="about-sm">With a background in Fashion Technology (NIFT, New Delhi) and a Masters in Luxury &amp; Fashion Management (Paris School of Business), I spent three years at Solvei8 in three interlocking roles: pre-sales consultant owning the full sales cycle, implementation lead deploying Plani8, Tracki8, and Maintaini8 across 50+ garment factory sites, and customer success manager growing and retaining 15+ accounts across India, Vietnam, and Bangladesh.</p>
+      <p class="about-sm">At pre-sales, I ran discovery workshops, built ROI models quantifying 10–15% DHU reduction and 12–15% cost savings, and demoed to factory directors at organisations of 500–5,000 employees. Post-sale, I owned deployment end to end: workflow design, ERP integration, training workforces of up to 300+. Post-go-live, I stayed with the client — monthly performance reviews, upsell identification, escalation handling — ensuring every account hit its KPIs and renewed.</p>
       <div class="about-divider"></div>
-      <p class="about-sm">Alongside this, I carry a genuine parallel track in trade marketing and brand strategy — academic and applied. Equally comfortable in a SaaS consulting room and a brand strategy session. Based in Paris since October 2024. Open to opportunities across Europe and the Middle East. Available immediately.</p>
-      <div class="open-to">
-        <div class="ot-label">Currently Open To</div>
-        <div class="ot-row"><div class="ot-pip"></div><div><div class="ot-title">Pre-Sales · Solution Consultant (Non-Tech SaaS)</div><div class="ot-desc">Discovery, demos, ROI modelling, proposal building — consultative sales for B2B SaaS in manufacturing, retail, or fashion.</div></div></div>
-        <div class="ot-row"><div class="ot-pip"></div><div><div class="ot-title">Customer Success Manager · Account Manager</div><div class="ot-desc">Owning post-go-live relationships across 15+ accounts — monthly reviews, upsell identification, escalation handling, renewal management, and performance reporting.</div></div></div>
-        <div class="ot-row"><div class="ot-pip"></div><div><div class="ot-title">Implementation Consultant</div><div class="ot-desc">End-to-end deployment ownership, change management, KPI governance, and workforce adoption programmes.</div></div></div>
-        <div class="ot-row"><div class="ot-pip"></div><div><div class="ot-title">Trade Marketing Manager · Brand Strategy Consultant</div><div class="ot-desc">Field activation, POS strategy, competitive benchmarking — luxury, food &amp; beverage, premium FMCG.</div></div></div>
-      </div>
+      <p class="about-sm">Beyond SaaS, I bring genuine depth in trade marketing, brand strategy, and AI-enabled operations. I design and deploy multi-agent AI systems for trend intelligence, luxury copywriting, and retail pricing — applied tools, not demos. Based in Paris since October 2024. Available immediately across Europe and the Middle East.</p>
     </div>
     <div>
       <div class="kpi-stack">
-        <div class="kpi-row"><div class="kpi-fig">15<em>+</em></div><div class="kpi-desc">Client accounts managed as Customer Success Manager</div></div>
-        <div class="kpi-row"><div class="kpi-fig">10–15<em>%</em></div><div class="kpi-desc">DHU (defects/unit) reduction post-implementation</div></div>
-        <div class="kpi-row"><div class="kpi-fig">12–15<em>%</em></div><div class="kpi-desc">Cost reduction over 3–5 months post go-live</div></div>
-        <div class="kpi-row"><div class="kpi-fig">6–10<em>%</em></div><div class="kpi-desc">Production efficiency gain per site</div></div>
-        <div class="kpi-row"><div class="kpi-fig">300<em>+</em></div><div class="kpi-desc">Largest workforce trained in a single implementation</div></div>
-        <div class="kpi-row"><div class="kpi-fig">#1</div><div class="kpi-desc">Cesim marketing simulation — 15-team cohort, PSB</div></div>
+        <div class="kpi-row"><div class="kpi-fig">50<em>+</em></div><div class="kpi-desc">Factory sites deployed across India, Vietnam &amp; Bangladesh — 100% launch readiness on every activation</div></div>
+        <div class="kpi-row"><div class="kpi-fig">10–15<em>%</em></div><div class="kpi-desc">DHU (defects/unit) reduction delivered post-implementation, measured at 3–5 month KPI sign-off</div></div>
+        <div class="kpi-row"><div class="kpi-fig">12–15<em>%</em></div><div class="kpi-desc">Cost reduction achieved over 3–5 months post go-live across the account portfolio</div></div>
+        <div class="kpi-row"><div class="kpi-fig">6–10<em>%</em></div><div class="kpi-desc">Production efficiency gain per site — measured against pre-deployment baseline KPIs</div></div>
+        <div class="kpi-row"><div class="kpi-fig">300<em>+</em></div><div class="kpi-desc">Largest single-site workforce trained in one implementation rollout</div></div>
+        <div class="kpi-row"><div class="kpi-fig">15<em>+</em></div><div class="kpi-desc">Active client accounts managed as CSM — monthly QBRs, upsell pipeline, escalation ownership</div></div>
+        <div class="kpi-row"><div class="kpi-fig">#1</div><div class="kpi-desc">Cesim marketing simulation ranking — 15-team cohort, Paris School of Business</div></div>
       </div>
     </div>
     <div class="philosophy-block"><p>The best consultants don't just implement software — they change how an organisation sees itself. That's what I aim for on every deployment: measurable outcomes, lasting adoption, and a client who couldn't imagine going back.</p></div>
@@ -383,23 +379,24 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
         <div class="cdi" style="padding:0 2rem">
           <div>
             <div class="cd-label">Context &amp; Pre-Sales</div>
-            <div class="cd-body">Solvei8 builds ERP and MES platforms for garment manufacturing — four products: Plani8 (production planning), Tracki8 (production execution), Maintaini8 (maintenance automation), and Operational Intelligence dashboards on web and mobile.<br/><br/>As pre-sales consultant, I ran discovery workshops mapping As-Is workflows, delivered tailored demos to factory directors and ops heads at organisations of 500–5,000 employees, and built ROI models quantifying projected DHU reduction, cost savings, and efficiency gains versus current state — supporting the sales team in closing contracts across three countries.</div>
+            <div class="cd-body">Solvei8 builds ERP and MES platforms for garment manufacturing — four products: <strong style="color:var(--black)">Plani8</strong> (production planning &amp; scheduling), <strong style="color:var(--black)">Tracki8</strong> (real-time production execution tracking), <strong style="color:var(--black)">Maintaini8</strong> (maintenance automation), and <strong style="color:var(--black)">Operational Intelligence</strong> dashboards on web and mobile.<br/><br/>As pre-sales consultant, I ran As-Is discovery workshops with factory operations heads, delivered tailored demos to factory directors at organisations of 500–5,000 employees (5 to 100+ assembly lines), and built ROI models quantifying projected DHU reduction (10–15%), cost savings (12–15%), and efficiency gains (6–10%) versus current state. These models were the commercial anchor of every deal.</div>
           </div>
           <div>
             <div class="cd-label">Implementation &amp; Delivery</div>
-            <div class="cd-body">Post-contract, I owned the full delivery lifecycle: To-Be workflow design, ERP integration configuration (web &amp; mobile dashboard outputs), and go-live coordination across 50+ sites with 100% launch readiness.<br/><br/>Workforce training was scaled to site complexity — from 10-person specialist sessions to 300+ worker rollouts. Managed a team of 4 consultants across concurrent deployments. No site signed off until measurable KPIs were achieved at the 3–5 month mark.</div>
+            <div class="cd-body">Post-contract, I owned the full delivery lifecycle across all four platforms: To-Be workflow design, ERP and MES integration configuration, web and mobile dashboard setup, and go-live coordination — achieving 100% launch readiness across 50+ sites with no failed activations.<br/><br/>Workforce training was calibrated to site complexity: from 10-person specialist sessions for planning managers to 300+ worker rollouts for line operators. Managed a team of 4 consultants across concurrent deployments. KPI sign-off at 3–5 months post go-live was non-negotiable — no account was marked complete until measurable improvement was confirmed against baseline.</div>
           </div>
           <div>
             <div class="cd-label">Measured Outcomes</div>
             <div class="cd-metrics">
               <div class="dm"><span class="dm-k">DHU Reduction</span><span class="dm-v">10–15%</span></div>
               <div class="dm"><span class="dm-k">Cost Reduction</span><span class="dm-v">12–15%</span></div>
-              <div class="dm"><span class="dm-k">Efficiency Gain</span><span class="dm-v">6–10%</span></div>
-              <div class="dm"><span class="dm-k">Sites Deployed</span><span class="dm-v">50+</span></div>
-              <div class="dm"><span class="dm-k">Max Workforce Trained</span><span class="dm-v">300+</span></div>
-              <div class="dm"><span class="dm-k">Org Size Range</span><span class="dm-v">500–5,000</span></div>
-              <div class="dm"><span class="dm-k">Assembly Lines</span><span class="dm-v">5 → 100+</span></div>
-              <div class="dm"><span class="dm-k">Countries</span><span class="dm-v">India, Vietnam, Bangladesh</span></div>
+              <div class="dm"><span class="dm-k">Production Efficiency Gain</span><span class="dm-v">6–10%</span></div>
+              <div class="dm"><span class="dm-k">Sites Deployed</span><span class="dm-v">50+ · 0 failed activations</span></div>
+              <div class="dm"><span class="dm-k">Max Workforce Trained</span><span class="dm-v">300+ (single site)</span></div>
+              <div class="dm"><span class="dm-k">Platforms Deployed</span><span class="dm-v">Plani8 · Tracki8 · Maintaini8 · OI</span></div>
+              <div class="dm"><span class="dm-k">Org Size Range</span><span class="dm-v">500–5,000 employees</span></div>
+              <div class="dm"><span class="dm-k">Assembly Lines</span><span class="dm-v">5 → 100+ per site</span></div>
+              <div class="dm"><span class="dm-k">Countries</span><span class="dm-v">India · Vietnam · Bangladesh</span></div>
             </div>
           </div>
         </div>
@@ -716,27 +713,27 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
 <section id="ai-agents" class="section">
   <div class="slabel"><span class="slabel-num">04</span><div class="slabel-rule"></div><h2 class="slabel-text">AI Studio</h2></div>
   <div class="agents-lede">
-    <div class="agents-lede-text">Three live AI agents I've designed and prompted — each one a working tool, not a demo. They reflect the three real use cases where AI creates the most commercial value in fashion and luxury marketing: intelligence gathering, content production at scale, and competitive pricing surveillance. Interact with all three now.</div>
-    <div class="agents-badge"><div class="ab-label">Demonstrated Capability</div><div class="ab-text">Prompt Engineering · Agentic Workflow Design · AI-Enabled Marketing &amp; Consulting Operations</div></div>
+    <div class="agents-lede-text">Three live multi-agent AI systems I've designed, prompted, and deployed — each running a structured pipeline of specialist sub-agents that gather, analyse, and synthesise before delivering a verdict. These are production-grade tools demonstrating what AI-enabled operations looks like in practice: not single-prompt chatbots, but layered reasoning systems built for commercial use.</div>
+    <div class="agents-badge"><div class="ab-label">Demonstrated Capability</div><div class="ab-text">Multi-Agent Pipeline Design · Prompt Engineering · AI-Enabled Marketing, Consulting &amp; Digital Transformation Operations</div></div>
   </div>
   <div class="agents-grid">
 
     <!-- AGENT 1: FASHION TREND NEWS -->
     <div class="agent-card">
       <div class="agent-head">
-        <div><div class="agent-num">Agent 01 — Intelligence</div><div class="agent-name">Fashion Trend<br/>Daily Briefing</div></div>
+        <div><div class="agent-num">Agent 01 — Intelligence · 3-Stage Pipeline</div><div class="agent-name">Fashion Trend<br/>Daily Briefing</div></div>
         <div class="agent-live"><span class="live-dot"></span>Live</div>
       </div>
       <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Topic Input</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">AI Scans Signals</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Summary + Insight</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node">→ Email Brief</div></div>
+        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Signal Scout</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Brand Intel</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Commercial Verdict</div></div>
       </div>
-      <div class="agent-desc">Your daily fashion intelligence briefing. Enter any trend topic — a colour, silhouette, material, brand, or category — and get a structured market signal summary: where it's emerging, who's wearing it, which brands are moving, and what it means commercially.</div>
+      <div class="agent-desc">A 3-stage pipeline: Stage 1 (Signal Scout) maps social velocity, runway presence and demographic spread. Stage 2 (Brand Intelligence) identifies who's winning, who's late, and regional velocity differences. Stage 3 (Commercial Verdict) synthesises order-staging guidance and markdown risk into a single actionable recommendation.</div>
       <div class="agent-chat">
         <div class="chat-hist" id="trend-hist">
-          <div class="msg assistant"><div class="msg-role">Fashion Trend Briefing</div><div class="msg-bubble">Good morning. Enter any fashion topic — a trend, colour, silhouette, brand move, or category — and I'll deliver your daily intelligence briefing with commercial context and signal strength.</div></div>
+          <div class="msg assistant"><div class="msg-role">Trend Briefing · 3-Stage Pipeline</div><div class="msg-bubble">Enter any fashion topic — a trend, colour, silhouette, brand move, or category — and I'll run all three pipeline stages: signal mapping, brand analysis, then a commercial verdict with timing and markdown risk.</div></div>
         </div>
         <div class="typing" id="trend-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
         <div class="chat-row">
@@ -754,19 +751,19 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
     <!-- AGENT 2: LUXURY COPYWRITER -->
     <div class="agent-card">
       <div class="agent-head">
-        <div><div class="agent-num">Agent 02 — Content</div><div class="agent-name">Instant Luxury<br/>Copywriter</div></div>
+        <div><div class="agent-num">Agent 02 — Content · 3-Stage Pipeline</div><div class="agent-name">Luxury<br/>Copywriter</div></div>
         <div class="agent-live"><span class="live-dot"></span>Live</div>
       </div>
       <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Product Name</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">AI Writes Copy</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Luxury Description</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node">→ Google Sheet</div></div>
+        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Brand Decoder</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Copy Lab ×3</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Editorial Select</div></div>
       </div>
-      <div class="agent-desc">Drop a basic product name or brief — I'll return a high-end, luxury-tone product description ready for e-commerce, retail signage, or catalogue copy. Trained on the vocabulary of Maison Margiela, Bottega Veneta, and the great French maisons.</div>
+      <div class="agent-desc">A 3-stage creative pipeline: Stage 1 (Brand Decoder) identifies the product's sensory story and closest luxury house equivalent. Stage 2 (Copy Laboratory) generates three distinct copy directions — restraint, provocation, heritage — each with headline and description. Stage 3 (Editorial Selection) selects the winning direction, explains why, and delivers a polished final version.</div>
       <div class="agent-chat">
         <div class="chat-hist" id="copy-hist">
-          <div class="msg assistant"><div class="msg-role">Luxury Copywriter</div><div class="msg-bubble">Give me a product — a name, a brief, or even just a concept — and I will return a refined, luxury-register description. Specify the brand voice or category if you have one.</div></div>
+          <div class="msg assistant"><div class="msg-role">Luxury Copywriter · 3-Stage Pipeline</div><div class="msg-bubble">Give me a product — name, brief, or concept — and I'll run the full pipeline: decode the product's brand DNA, generate three creative directions, then select and refine the strongest into final copy ready for e-commerce, POS, or catalogue.</div></div>
         </div>
         <div class="typing" id="copy-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
         <div class="chat-row">
@@ -784,19 +781,19 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
     <!-- AGENT 3: COMPETITOR PRICE PULSE -->
     <div class="agent-card">
       <div class="agent-head">
-        <div><div class="agent-num">Agent 03 — Competitive</div><div class="agent-name">Competitor Price<br/>Pulse Agent</div></div>
+        <div><div class="agent-num">Agent 03 — Competitive · 3-Stage Pipeline</div><div class="agent-name">Competitor Price<br/>Pulse Agent</div></div>
         <div class="agent-live"><span class="live-dot"></span>Live</div>
       </div>
       <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Competitor Brief</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">AI Analysis</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Pricing Verdict</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node">→ Slack Alert</div></div>
+        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Market Scanner</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Scenario Model</div><div class="wf-arrow">→</div></div>
+        <div class="wf-step"><div class="wf-node active">Pricing Verdict</div></div>
       </div>
-      <div class="agent-desc">Your retail pricing analyst. Describe your product and up to 3 competitors with their price points or market moves. I'll assess whether you should hold price, markdown, run a flash sale, or reposition — with commercial reasoning.</div>
+      <div class="agent-desc">A 3-stage pricing intelligence pipeline: Stage 1 (Market Scanner) maps competitor positions and assigns a Market Pressure Level. Stage 2 (Scenario Modeller) models three response scenarios — Hold, Tactical Markdown, Flash Sale — with volume, margin, and brand-signal outcomes for each. Stage 3 (Pricing Verdict) delivers a single timed recommendation with leading indicators to monitor.</div>
       <div class="agent-chat">
         <div class="chat-hist" id="price-hist">
-          <div class="msg assistant"><div class="msg-role">Competitor Price Pulse</div><div class="msg-bubble">I'm your retail pricing analyst. Tell me: your product and price point, and what your competitors are doing — price cuts, sold-out signals, promotions. I'll give you a clear markdown or hold recommendation with reasoning.</div></div>
+          <div class="msg assistant"><div class="msg-role">Price Pulse · 3-Stage Pipeline</div><div class="msg-bubble">Tell me your product, price point, and what competitors are doing. I'll run three stages: scan the competitive landscape, model Hold vs. Markdown vs. Flash Sale scenarios, then deliver a clear pricing verdict with timing and what to watch.</div></div>
         </div>
         <div class="typing" id="price-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
         <div class="chat-row">
@@ -820,8 +817,12 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
   <div class="cv-layout">
     <div>
       <div class="cv-sb-block">
+        <div class="cv-sb-label">ERP / SaaS Platforms</div>
+        <span class="skill-pill saas-tag">Plani8 (Production Planning)</span><span class="skill-pill saas-tag">Tracki8 (Execution Tracking)</span><span class="skill-pill saas-tag">Maintaini8 (Maintenance)</span><span class="skill-pill saas-tag">OI Dashboards</span><span class="skill-pill saas-tag">ERP Integration</span><span class="skill-pill saas-tag">MES Configuration</span>
+      </div>
+      <div class="cv-sb-block">
         <div class="cv-sb-label">Pre-Sales &amp; Implementation</div>
-        <span class="skill-pill saas-tag">Discovery Workshops</span><span class="skill-pill saas-tag">Product Demos</span><span class="skill-pill saas-tag">ROI Modelling</span><span class="skill-pill saas-tag">Proposal Building</span><span class="skill-pill saas-tag">ERP Integration</span><span class="skill-pill saas-tag">Change Management</span><span class="skill-pill saas-tag">Workforce Training</span><span class="skill-pill saas-tag">Go-Live Management</span><span class="skill-pill saas-tag">KPI Sign-off</span>
+        <span class="skill-pill saas-tag">Discovery Workshops</span><span class="skill-pill saas-tag">Product Demos</span><span class="skill-pill saas-tag">ROI Modelling</span><span class="skill-pill saas-tag">Proposal Building</span><span class="skill-pill saas-tag">Change Management</span><span class="skill-pill saas-tag">Workforce Training</span><span class="skill-pill saas-tag">Go-Live Management</span><span class="skill-pill saas-tag">KPI Sign-off</span>
       </div>
       <div class="cv-sb-block">
         <div class="cv-sb-label">Customer Success</div>
@@ -832,8 +833,8 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
         <span class="skill-pill">Field Activation</span><span class="skill-pill">POS Strategy</span><span class="skill-pill">Brand Communication</span><span class="skill-pill">Competitive Benchmarking</span><span class="skill-pill">Promotional Planning</span><span class="skill-pill">Merchandising</span><span class="skill-pill">IRI Panel</span>
       </div>
       <div class="cv-sb-block">
-        <div class="cv-sb-label">Analytics &amp; AI</div>
-        <span class="skill-pill">Power BI</span><span class="skill-pill">Excel Advanced</span><span class="skill-pill">KPI Dashboards</span><span class="skill-pill">Salesforce</span><span class="skill-pill">Prompt Engineering</span><span class="skill-pill">Agentic Workflows</span><span class="skill-pill">AI Operations</span>
+        <div class="cv-sb-label">AI &amp; Digital Transformation</div>
+        <span class="skill-pill">Prompt Engineering</span><span class="skill-pill">Agentic Workflows</span><span class="skill-pill">Multi-Agent Systems</span><span class="skill-pill">AI Operations</span><span class="skill-pill">Power BI</span><span class="skill-pill">Excel Advanced</span><span class="skill-pill">KPI Dashboards</span><span class="skill-pill">Salesforce</span>
       </div>
       <div class="cv-sb-block">
         <div class="cv-sb-label">Languages</div>
@@ -857,13 +858,14 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
         <div class="cv-exp-top"><div class="cv-exp-title">Solution Consultant — Pre-Sales, Implementation &amp; Customer Success</div><div class="cv-exp-date">Sept 2021 – Oct 2024</div></div>
         <div class="cv-exp-co">Solvei8 · India, Vietnam &amp; Bangladesh</div>
         <ul class="cv-bullets">
-          <li><strong>Pre-Sales:</strong> Ran discovery workshops and product demos of Solvei8's ERP suite (Plani8, Tracki8, Maintaini8) to factory directors and ops heads at organisations of 500–5,000 employees — from 5-line to 100+ assembly line facilities across India, Vietnam, and Bangladesh.</li>
-          <li><strong>Pre-Sales:</strong> Built tailored ROI models for prospective clients quantifying projected DHU reduction (10–15%), cost savings (12–15%), and efficiency gains (6–10%) versus current-state operations, supporting the sales team in closing contracts.</li>
-          <li><strong>Implementation:</strong> Owned full post-contract delivery — To-Be workflow design, ERP integration configuration (web and mobile dashboard outputs), and go-live coordination across 50+ sites with 100% launch readiness achieved on every activation.</li>
-          <li><strong>Implementation:</strong> Designed and delivered workforce training programmes scaled to site size — from 10-person specialist sessions to 300+ worker rollouts — ensuring operational adoption before KPI sign-off at 3–5 months post go-live.</li>
-          <li><strong>CSM:</strong> Managed 15+ client accounts post-deployment — running monthly performance reviews, presenting KPI dashboard analysis, identifying upsell opportunities, handling escalations, and supporting renewal conversations across three geographies.</li>
-          <li><strong>CSM:</strong> Monitored platform adoption metrics and usage patterns to flag at-risk accounts early; delivered targeted training refreshers on new feature releases and after workforce turnover events.</li>
-          <li>Managed a team of 4 consultants across concurrent deployments; built executive Power BI / Excel dashboards for client-facing monthly reporting and internal account health tracking.</li>
+          <li><strong>Pre-Sales:</strong> Ran As-Is discovery workshops and delivered tailored demos of Plani8 (production planning), Tracki8 (execution tracking), and Maintaini8 (maintenance automation) to factory directors at organisations of 500–5,000 employees — from 5 to 100+ assembly line facilities across three countries.</li>
+          <li><strong>Pre-Sales:</strong> Built ROI models quantifying 10–15% DHU reduction, 12–15% cost savings, and 6–10% efficiency gains versus current-state operations, providing the commercial case that supported contract close across India, Vietnam, and Bangladesh.</li>
+          <li><strong>Implementation:</strong> Owned full post-contract delivery lifecycle — To-Be workflow design, ERP and MES integration configuration, web and mobile OI dashboard setup, and go-live coordination across 50+ sites with 100% launch readiness on every activation. Zero failed deployments.</li>
+          <li><strong>Implementation:</strong> Designed and delivered workforce training programmes scaled to site complexity — from 10-person planning specialist sessions to 300+ line worker rollouts — with KPI sign-off at 3–5 months post go-live confirming sustained adoption and measurable improvement.</li>
+          <li><strong>CSM:</strong> Managed 15+ active client accounts post-deployment — running monthly QBRs with factory ops directors, presenting KPI dashboard analysis, identifying upsell opportunities across the platform suite, handling escalations, and owning renewal conversations across three geographies.</li>
+          <li><strong>CSM:</strong> Monitored platform adoption metrics to identify at-risk accounts early; delivered targeted re-training on new Solvei8 feature releases and after workforce turnover events to protect adoption KPIs.</li>
+          <li>Led a team of 4 consultants across concurrent multi-country deployments. Built executive Power BI and Excel dashboards for client-facing monthly reporting and internal account health tracking — enabling data-driven CSM decisions at scale.</li>
+          <li><strong>AI &amp; Digital Transformation:</strong> Designed and deployed multi-agent AI systems alongside consulting work — including trend intelligence briefers, luxury copywriting agents, and retail pricing analysts — demonstrating the ability to identify AI-enabled efficiency opportunities and build production-grade tools independently.</li>
         </ul>
       </div>
       <div class="cv-section-divider">Marketing &amp; Brand Experience</div>
@@ -871,25 +873,25 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
         <div class="role-split"><span class="role-chip mktg">Trade Strategy</span></div>
         <div class="cv-exp-top"><div class="cv-exp-title">Cesim Marketing Simulation — #1 Ranked Team</div><div class="cv-exp-date">2024–2025</div></div>
         <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Ranked #1 out of 15 teams by building a contrarian trade-first investment model — redirecting 40%+ of budget from consumer advertising to trade activation — outperforming all competitors on market share and margin.</li></ul>
+        <ul class="cv-bullets"><li>Ranked #1 out of 15 teams by identifying that all competing teams were running identical high-advertising, low-trade-investment playbooks — and building a contrarian model that redirected 40%+ of budget to trade activation. Achieved the highest market share and margin in the cohort across all simulation rounds.</li></ul>
       </div>
       <div class="cv-exp-item">
         <div class="role-split"><span class="role-chip mktg">Brand Strategy</span></div>
         <div class="cv-exp-top"><div class="cv-exp-title">NoCapp — Subscription Luxury Wig Brand (Group Project Lead)</div><div class="cv-exp-date">2025</div></div>
         <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Led development of a full brand strategy and go-to-market plan for NoCapp — a premium subscription wig company targeting a €300M French market. Applied Blue Ocean Strategy to reposition the category from medical necessity to luxury lifestyle, designing three subscription tiers (€179–€329/mo), a three-channel distribution model (D2C, flagship stores, Sephora), and a six-stage customer journey framework mapping pain points to aspirational outcomes across 10M+ potential customers.</li></ul>
+        <ul class="cv-bullets"><li>Led development of a full brand strategy and go-to-market plan for NoCapp — a premium subscription wig company targeting a €300M French market with 10M+ potential customers. Applied Blue Ocean Strategy to reposition the category from medical necessity to luxury lifestyle. Designed three subscription tiers (€179–€329/mo), a three-channel distribution model (D2C flagship stores, Sephora retail), and a six-stage customer journey framework mapping pain points to aspirational outcomes.</li></ul>
       </div>
       <div class="cv-exp-item">
         <div class="role-split"><span class="role-chip mktg">Benchmarking</span></div>
         <div class="cv-exp-top"><div class="cv-exp-title">Luxury Brand Competitive Intelligence Report</div><div class="cv-exp-date">2025</div></div>
         <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Benchmarked 5 premium brands across pricing architecture, assortment strategy, and trade execution. Identified white space in mid-premium gifting underexploited by 2 of 5 brands in the trade channel.</li></ul>
+        <ul class="cv-bullets"><li>Benchmarked 5 premium brands across pricing architecture, assortment strategy, and trade execution. Identified white space in mid-premium gifting underexploited by 2 of 5 brands in the trade channel — with commercial recommendations for channel investment reallocation.</li></ul>
       </div>
       <div class="cv-exp-item">
         <div class="role-split"><span class="role-chip mktg">Analysis</span></div>
         <div class="cv-exp-top"><div class="cv-exp-title">Category Analyst (Internship)</div><div class="cv-exp-date">Apr – Jul 2021</div></div>
         <div class="cv-exp-co">ClearTax India</div>
-        <ul class="cv-bullets"><li>Conducted market and category analysis to support commercial reporting; developed structured data summaries for internal stakeholders.</li></ul>
+        <ul class="cv-bullets"><li>Conducted market and category analysis supporting commercial reporting. Built structured data summaries for senior stakeholders — developing the analytical rigour that later underpinned ROI modelling and KPI reporting at Solvei8.</li></ul>
       </div>
     </div>
   </div>
@@ -901,18 +903,21 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
     <div class="contact-glow"></div>
     <div class="contact-inner">
       <div>
-        <div class="contact-eyebrow">Open to opportunities · Europe &amp; Middle East</div>
-        <h2 class="contact-hl">Three tracks.<br/><em>One candidate.</em></h2>
-        <p class="contact-sub">Three years of pre-sales, implementation, and customer success management in manufacturing SaaS — combined with genuine expertise in trade marketing, brand strategy, and AI-enabled operations. Based in Paris. Open to opportunities across Europe and the Middle East. Available immediately.</p>
+        <div class="contact-eyebrow">Open to opportunities · Europe &amp; Middle East · Available immediately</div>
+        <h2 class="contact-hl">Let's work<br/><em>together.</em></h2>
+        <p class="contact-sub">Three years of pre-sales, ERP implementation, and customer success in manufacturing SaaS — combined with genuine expertise in trade marketing, brand strategy, and AI-enabled operations. Based in Paris. Open immediately across Europe and the Middle East.</p>
         <div class="contact-tracks">
           <div class="ct-row"><span class="ct-pip"></span>Pre-Sales Consultant · Solution Consultant (Non-Tech SaaS)</div>
           <div class="ct-row"><span class="ct-pip"></span>Customer Success Manager · Account Manager</div>
-          <div class="ct-row"><span class="ct-pip"></span>Implementation Consultant</div>
+          <div class="ct-row"><span class="ct-pip"></span>Implementation Consultant · Deployment Lead</div>
           <div class="ct-row"><span class="ct-pip"></span>Trade Marketing Manager · Brand Strategy Consultant</div>
+          <div class="ct-row"><span class="ct-pip"></span>Digital Transformation Consultant</div>
+          <div class="ct-row"><span class="ct-pip"></span>AI Operations Lead · Agentic Workflow Designer</div>
+          <div class="ct-row"><span class="ct-pip"></span>Business Development · Partnerships</div>
         </div>
       </div>
       <div class="contact-links">
-        <a href="mailto:harshtanwar1083@gmail.com" class="clr"><div><div class="clr-type">Email</div><div class="clr-val">harshtanwar1083@gmail.com</div></div><div class="clr-arrow">→</div></a>
+        <a href="/cdn-cgi/l/email-protection#f0989182839884919e879182c1c0c8c3b0979d91999cde939f9d" class="clr"><div><div class="clr-type">Email</div><div class="clr-val"><span class="__cf_email__" data-cfemail="f49c9586879c80959a839586c5c4ccc7b49399959d98da979b99">[email&#160;protected]</span></div></div><div class="clr-arrow">→</div></a>
         <a href="tel:+33749739200" class="clr"><div><div class="clr-type">Phone</div><div class="clr-val">+33 7 49 73 92 00</div></div><div class="clr-arrow">→</div></a>
         <a href="https://www.linkedin.com/in/harsh-tanwar-0a4383ba" target="_blank" class="clr"><div><div class="clr-type">LinkedIn</div><div class="clr-val">linkedin.com/in/harsh-tanwar-0a4383ba</div></div><div class="clr-arrow">→</div></a>
         <a href="./Harsh_Tanwar_CV.pdf" class="clr" download><div><div class="clr-type">CV Download</div><div class="clr-val">Harsh_Tanwar_CV.pdf</div></div><div class="clr-arrow">↓</div></a>
@@ -926,7 +931,7 @@ footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:
   <div class="footer-copy">© 2025 · Pre-Sales · CSM · Implementation · Trade Marketing · AI Studio · Europe &amp; Middle East</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Nav
 window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('elevated',scrollY>40));
 
@@ -955,11 +960,47 @@ function toggleCase(id){
 
 // AI AGENTS
 const SYSTEMS={
-  trend:`You are a senior fashion trend analyst and intelligence briefer working for a luxury brand consultancy. You monitor trend signals across social media, runway, street style, retail panels, and press. For any fashion topic given, deliver a structured daily briefing covering: Signal Strength (niche/emerging/mainstream/declining), Where It's Appearing (platforms, demographics, geographies), Key Brands Moving On It, Commercial Implication for retail buyers and trade marketers, and a 1-sentence Actionable Verdict. Write with authority, precision and commercial sharpness. Under 240 words. No bullet lists — structured prose with clear section labels.`,
+  trend:`You are a senior fashion intelligence system running a THREE-STAGE multi-agent pipeline. You must always structure your response in exactly these three stages, clearly labelled:
 
-  copy:`You are a luxury copywriter who has written for Maison Margiela, Bottega Veneta, Celine, and the great French maisons. You write product descriptions that are sensory, restrained, and quietly aspirational — never loud, never promotional. Your vocabulary is precise and evocative. You understand that in luxury, less is more, and that the right adjective is worth more than ten superlatives. For any product input, deliver: one short evocative headline (under 8 words), and one product description of 60–90 words in the luxury register. Never use words like: luxurious, premium, exclusive, high-end, affordable, amazing, perfect. Write what those words mean — don't say them.`,
+STAGE 1 — SIGNAL SCOUT (Data Gathering Agent):
+Analyse the topic across these signal sources: social media velocity (TikTok, Instagram, Pinterest), runway appearances (recent seasons), street-style databases, retail sell-through patterns, and press coverage frequency. Assign a Signal Strength rating: NICHE / EMERGING / MAINSTREAM / DECLINING. Identify the top 3 platforms and demographics where the signal is strongest.
 
-  price:`You are a senior retail pricing analyst specialising in premium and luxury FMCG, fashion, and food categories. You advise brands on markdown strategy, competitive response, and price positioning. When given information about a brand's product, price point, and competitor moves, deliver: a clear pricing verdict (Hold / Tactical Markdown / Flash Sale / Reposition), the commercial reasoning in 2–3 tight paragraphs, the risk of each option, and a recommended action with timing. Be direct, commercially sharp, and specific. Under 260 words. No bullet lists.`
+STAGE 2 — BRAND INTELLIGENCE (Market Analysis Agent):
+Identify which brands are moving on this trend — who is early, who is late, who has already peaked. Assess regional velocity differences (Europe vs US vs Asia). Flag any competing or adjacent trends that could displace this one. Identify the commercial window remaining.
+
+STAGE 3 — COMMERCIAL VERDICT (Strategy Agent):
+Synthesise the above into a single actionable recommendation for a buyer or trade marketer. Include: order staging advice (how much to commit now vs. wait), the markdown risk if the trend plateaus, and a 1-sentence Actionable Verdict with timing.
+
+Write with authority and commercial precision. Total response 280–350 words. Use clear STAGE labels throughout.`,
+
+  copy:`You are a luxury copywriting system running a THREE-STAGE creative pipeline. Always structure your response with clear stage labels:
+
+STAGE 1 — BRAND DECODER (Context Agent):
+Before writing, decode the product: identify its material story, the sensory experience it offers, the aspiration it represents, and the type of customer who would buy it. Name the luxury house whose aesthetic this most closely resembles (e.g. Celine, Bottega Veneta, Hermès). Do not write copy yet — build the brief. 3–4 sentences.
+
+STAGE 2 — COPY LABORATORY (Generation Agent):
+Generate THREE distinct copy directions for the product — each with a different emotional register (e.g. restraint / provocation / heritage). Each direction: one headline (under 8 words) + one description (50–70 words). Label them Direction A, B, C.
+
+STAGE 3 — EDITORIAL SELECTION (Refinement Agent):
+Select the strongest direction and explain why it wins — what it communicates that the others don't. Then deliver a final, polished version of that direction, refined to its most precise form. This is the version ready for e-commerce, retail signage, or catalogue.
+
+Never use: luxurious, premium, exclusive, high-end, affordable, amazing, perfect. Write what those words mean. Total response 320–400 words.`,
+
+  price:`You are a retail pricing intelligence system running a THREE-STAGE analytical pipeline. Always structure your response with clear stage labels:
+
+STAGE 1 — MARKET SCANNER (Data Agent):
+Analyse the competitive landscape described. Map each competitor's position: Are they marking down from strength (clearing excess) or weakness (desperate)? Is the category in a promotional cycle or a structural pricing shift? Assess whether the market is in a race-to-the-bottom or a bifurcation between value and premium. Assign a Market Pressure Level: LOW / MEDIUM / HIGH / CRITICAL.
+
+STAGE 2 — SCENARIO MODELLER (Analysis Agent):
+Model three response scenarios with their commercial outcomes:
+Scenario A — Hold Price: What happens to volume, margin, and brand positioning? What is the risk?
+Scenario B — Tactical Markdown (10–20%): What is the likely volume uplift? What does it signal to the market? Can you recover price later?
+Scenario C — Flash Sale / Promotional Mechanic: What mechanic fits best (time-limited, channel-exclusive, bundle)? What is the exit strategy?
+
+STAGE 3 — PRICING VERDICT (Strategy Agent):
+Deliver a single clear recommendation with timing. State: which scenario to execute, by when, at what level, and what to monitor in the following 2 weeks as a leading indicator of whether it's working.
+
+Be direct and commercially sharp. Total response 300–360 words. Use clear STAGE labels throughout.`
 };
 
 const histories={trend:[],copy:[],price:[]};
@@ -1081,18 +1122,9 @@ function renderMsg(id,role,text){
   roleEl.textContent=(role==='user'?'You':agentNames[id]);
   const bodyEl=document.createElement('div');
   bodyEl.className='msg-bubble';
-  bodyEl.innerHTML=text.replace(/\n/g,'<br/>');
+  // Style STAGE labels in agent responses
+  let formatted = text.replace(/\n/g,'<br/>');
+  formatted = formatted.replace(/(STAGE \d+ —[^<:]+:?)/g,'<span style="display:inline-block;margin-top:0.7rem;margin-bottom:0.2rem;font-size:0.48rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);font-family:\'DM Sans\',sans-serif;font-weight:500;">$1</span>');
+  bodyEl.innerHTML=formatted;
   div.appendChild(roleEl);
-  div.appendChild(bodyEl);
-  div.style.animation='fadeMsg 0.28s ease forwards';
-  hist.appendChild(div);
-  hist.scrollTop=hist.scrollHeight;
-}
-
-function fillAndSend(id,text){
-  document.getElementById(id+'-input').value=text;
-  sendMsg(id);
-}
-</script>
-</body>
-</html>
+  div.appendC
