@@ -3,1148 +3,725 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Harsh Tanwar: Pre-Sales, CSM, Implementation and Trade Marketing</title>
+<title>Harsh Tanwar, PMP | Project Manager & ERP Implementation Consultant</title>
+<meta name="description" content="PMP certified project manager and ERP implementation consultant. 40+ sites across India, Vietnam, and Bangladesh. Based in Paris."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-
-<!-- Google tag (gtag.js) -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7ZZ2S7KYQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7ZZ2S7KYQF');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7ZZ2S7KYQF');</script>
 <style>
 :root{
-  --black:#0a0a0a;--off-white:#f7f5f2;--warm-white:#faf9f7;
-  --gold:#c9a96e;--gold-dim:rgba(201,169,110,0.13);--gold-border:rgba(201,169,110,0.28);
-  --mid:#3a3a3a;--light:#6b6b6b;--border:rgba(0,0,0,0.09);--border-strong:rgba(0,0,0,0.15);
-  --panel:#f2f0ec;--blue-accent:#1a3a5c;--teal:#0f4c5c;
-  --green:#16a34a;--red:#dc2626;
+  --ink:#0d0d0d;--paper:#f5f3ef;--warm:#faf8f4;--accent:#1a3a5c;
+  --gold:#b8975a;--gold-light:rgba(184,151,90,0.12);--gold-border:rgba(184,151,90,0.25);
+  --mid:#4a4a4a;--light:#888;--rule:rgba(0,0,0,0.1);--rule-strong:rgba(0,0,0,0.18);
+  --panel:#eceae5;--navy:#0f2744;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--black);overflow-x:hidden}
-::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--gold)}
+html{scroll-behavior:smooth;font-size:17px}
+body{font-family:'Outfit',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+::-webkit-scrollbar{width:2px}::-webkit-scrollbar-thumb{background:var(--gold)}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 4rem;height:64px;background:rgba(247,245,242,0.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s}
-nav.elevated{box-shadow:0 1px 20px rgba(0,0,0,0.07)}
-.nav-wordmark{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:400;letter-spacing:0.04em;color:var(--black);text-decoration:none;display:flex;align-items:center;gap:0.4rem}
-.nav-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block}
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 3.5rem;height:64px;background:rgba(245,243,239,0.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--rule);transition:box-shadow 0.3s}
+nav.elevated{box-shadow:0 2px 24px rgba(0,0,0,0.06)}
+.nav-brand{display:flex;align-items:center;gap:0.6rem;text-decoration:none}
+.nav-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:500;color:var(--ink);letter-spacing:0.02em}
+.nav-cert{font-family:'DM Mono',monospace;font-size:0.62rem;color:var(--gold);letter-spacing:0.1em;border:1px solid var(--gold-border);padding:0.2rem 0.6rem}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-.nav-links a{font-size:0.63rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.2s}
-.nav-links a:hover{color:var(--black)}
-.nav-cta{background:var(--black)!important;color:var(--off-white)!important;padding:0.42rem 1rem;transition:background 0.2s!important}
-.nav-cta:hover{background:var(--blue-accent)!important}
+.nav-links a{font-size:0.7rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--navy)!important;color:var(--paper)!important;padding:0.55rem 1.2rem}
+.nav-cta:hover{background:var(--accent)!important}
 
-/* HERO */
-#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4rem 4.5rem;position:relative;overflow:hidden;background:var(--black)}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.04) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
-.hero-glow{position:absolute;top:-20%;right:-10%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(26,58,92,0.55) 0%,transparent 70%);pointer-events:none}
-.hero-glow2{position:absolute;bottom:-30%;left:-5%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(15,76,92,0.3) 0%,transparent 70%);pointer-events:none}
-.hero-inner{position:relative;z-index:2}
-.hero-tag{font-size:0.56rem;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem;display:flex;align-items:center;gap:0.8rem;opacity:0;animation:riseIn 0.7s 0.2s forwards}
-.hero-tag::before{content:'';width:20px;height:1px;background:var(--gold)}
-.hero-name{font-family:'Playfair Display',serif;font-size:clamp(3.8rem,8.5vw,8rem);font-weight:400;line-height:0.93;color:var(--off-white);letter-spacing:-0.01em;margin-bottom:1.3rem;opacity:0;animation:riseIn 0.8s 0.4s forwards}
+#hero{min-height:100vh;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero-left{display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 3.5rem 4rem;position:relative;z-index:2}
+.hero-right{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:8rem 3.5rem 4rem;border-left:1px solid rgba(255,255,255,0.06);z-index:2}
+.hero-bg-pattern{position:absolute;inset:0;background-image:linear-gradient(rgba(184,151,90,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(184,151,90,0.03) 1px,transparent 1px);background-size:48px 48px}
+.hero-glow{position:absolute;top:-20%;right:10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(26,58,92,0.8) 0%,transparent 65%);pointer-events:none}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;opacity:0;animation:fadeUp 0.7s 0.3s forwards;display:flex;align-items:center;gap:0.8rem}
+.hero-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,7vw,7rem);font-weight:300;line-height:0.95;color:var(--paper);letter-spacing:-0.01em;margin-bottom:0.3rem;opacity:0;animation:fadeUp 0.8s 0.5s forwards}
 .hero-name em{font-style:italic;color:var(--gold)}
-.hero-tracks{display:flex;gap:0.7rem;flex-wrap:wrap;margin-bottom:2.3rem;opacity:0;animation:riseIn 0.7s 0.6s forwards}
-.track-badge{display:flex;align-items:center;gap:0.5rem;border:1px solid;padding:0.42rem 0.9rem;font-size:0.58rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase}
-.track-badge.saas{border-color:rgba(201,169,110,0.4);color:var(--gold)}
-.track-badge.mktg{border-color:rgba(255,255,255,0.18);color:rgba(247,245,242,0.65)}
-.track-pip{width:6px;height:6px;border-radius:50%}
-.track-badge.saas .track-pip{background:var(--gold)}
-.track-badge.mktg .track-pip{background:rgba(247,245,242,0.5)}
-.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;opacity:0;animation:riseIn 0.7s 0.8s forwards}
-.hero-statement{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:rgba(247,245,242,0.48);max-width:440px;line-height:1.65}
-.hero-stats{display:flex;gap:2.8rem}
-.hs-num{font-family:'Playfair Display',serif;font-size:2.3rem;font-weight:400;color:var(--off-white);line-height:1;margin-bottom:0.18rem}
-.hs-num span{color:var(--gold);font-size:1.3rem}
-.hs-label{font-size:0.5rem;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:rgba(247,245,242,0.28)}
-.hero-scroll{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.4rem;opacity:0;animation:riseIn 0.6s 1.3s forwards}
-.scroll-bar{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:scrollDrop 1.6s 1.5s infinite}
-.scroll-txt{font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(247,245,242,0.22)}
+.hero-title{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.4);margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.7s 0.7s forwards}
+.hero-statement{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:rgba(245,243,239,0.55);line-height:1.7;max-width:420px;opacity:0;animation:fadeUp 0.7s 0.9s forwards}
+.hero-cta-row{display:flex;gap:0.8rem;margin-top:2rem;opacity:0;animation:fadeUp 0.7s 1.1s forwards}
+.btn-primary{font-family:'Outfit',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:0.9rem 2rem;background:var(--gold);color:var(--navy);border:1px solid var(--gold);transition:all 0.22s;display:inline-block}
+.btn-primary:hover{background:transparent;color:var(--gold)}
+.btn-secondary{font-family:'Outfit',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:0.9rem 2rem;background:transparent;color:rgba(245,243,239,0.6);border:1px solid rgba(255,255,255,0.12);transition:all 0.22s;display:inline-block}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.35);color:var(--paper)}
+.hero-stats-label{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,243,239,0.25);margin-bottom:1.8rem;opacity:0;animation:fadeUp 0.7s 0.6s forwards}
+.hero-stat{display:flex;align-items:baseline;justify-content:space-between;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,0.06);opacity:0}
+.hero-stat:first-child{border-top:1px solid rgba(255,255,255,0.06)}
+.hs-fig{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:300;color:var(--paper);line-height:1}
+.hs-fig sup{font-size:1.2rem;color:var(--gold)}
+.hs-desc{font-size:0.72rem;font-weight:300;color:rgba(245,243,239,0.32);max-width:180px;text-align:right;line-height:1.55}
+.hero-cert-block{margin-top:2rem;padding:1.3rem;border:1px solid var(--gold-border);background:rgba(184,151,90,0.05);opacity:0;animation:fadeUp 0.7s 1.4s forwards}
+.hcb-label{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.hcb-value{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--paper)}
+.hcb-meta{font-family:'DM Mono',monospace;font-size:0.56rem;color:rgba(245,243,239,0.3);margin-top:0.2rem;letter-spacing:0.06em}
+.hero-scroll{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;opacity:0;animation:fadeUp 0.6s 1.8s forwards}
+.scroll-line{width:1px;height:40px;background:linear-gradient(var(--gold),transparent);animation:scrollPulse 1.8s 2s infinite}
+.scroll-text{font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,243,239,0.2)}
 
-/* SECTION */
-.section{padding:5.5rem 4rem;max-width:1280px;margin:0 auto;opacity:1;transform:none;}
-.slabel{display:flex;align-items:center;gap:1rem;margin-bottom:3.2rem}
-.slabel-num{font-size:0.56rem;font-weight:500;letter-spacing:0.15em;color:var(--gold)}
-.slabel-rule{flex:1;height:1px;background:var(--border-strong)}
-.slabel-text{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.3vw,2.6rem);font-weight:400;color:var(--black)}
+.section{padding:5.5rem 3.5rem;max-width:1280px;margin:0 auto}
+.section-full{padding:5.5rem 3.5rem}
+.section-header{display:flex;align-items:center;gap:1.2rem;margin-bottom:3.5rem}
+.sh-num{font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.12em;color:var(--gold)}
+.sh-rule{flex:1;height:1px;background:var(--rule-strong)}
+.sh-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.5vw,2.9rem);font-weight:400;color:var(--ink)}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:4.5rem;align-items:start}
-.about-p{font-family:'Playfair Display',serif;font-size:1.18rem;font-weight:400;line-height:1.68;color:var(--black);margin-bottom:1rem}
-.about-sm{font-size:0.69rem;font-weight:300;line-height:1.9;color:var(--mid);margin-bottom:0.85rem}
-.about-divider{width:28px;height:1px;background:var(--gold);margin:1.3rem 0}
-.open-to{border:1px solid var(--border-strong);padding:1.4rem;margin-top:1.6rem;background:var(--warm-white)}
-.ot-label{font-size:0.5rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.9rem}
-.ot-row{display:flex;align-items:flex-start;gap:0.7rem;padding-bottom:0.55rem;border-bottom:1px solid var(--border);margin-bottom:0.55rem}
-.ot-row:last-child{border:none;margin:0;padding:0}
-.ot-pip{width:5px;height:5px;border-radius:50%;background:var(--gold);margin-top:0.35rem;flex-shrink:0}
-.ot-title{font-size:0.66rem;font-weight:500;color:var(--black);margin-bottom:0.12rem}
-.ot-desc{font-size:0.58rem;color:var(--mid);line-height:1.5}
-.kpi-stack{display:flex;flex-direction:column}
-.kpi-row{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;border-bottom:1px solid var(--border)}
-.kpi-row:first-child{border-top:1px solid var(--border)}
-.kpi-fig{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:400;color:var(--black);line-height:1}
-.kpi-fig em{font-style:normal;color:var(--gold);font-size:1rem}
-.kpi-desc{font-size:0.58rem;font-weight:300;color:var(--mid);max-width:195px;text-align:right;line-height:1.5}
-.philosophy-block{margin-top:2.8rem;padding:1.8rem 2.2rem;background:var(--black);grid-column:1/-1;position:relative}
-.philosophy-block::before{content:'"';font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--gold);opacity:0.2;position:absolute;top:-0.4rem;left:1.3rem;line-height:1}
-.philosophy-block p{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--off-white);line-height:1.65}
+.about-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:5rem;align-items:start}
+.about-lede{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:400;line-height:1.65;color:var(--ink);margin-bottom:1.5rem}
+.about-body{font-size:0.85rem;font-weight:300;line-height:1.95;color:var(--mid);margin-bottom:1rem}
+.about-divider{width:32px;height:1px;background:var(--gold);margin:1.5rem 0}
+.comp-label{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;margin-top:1.5rem}
+.comp-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.comp-tag{font-size:0.66rem;font-weight:400;padding:0.32rem 0.75rem;border:1px solid var(--rule-strong);color:var(--mid);letter-spacing:0.03em;transition:all 0.18s;cursor:default}
+.comp-tag:hover{border-color:var(--gold);color:var(--ink);background:var(--gold-light)}
+.comp-tag.primary{border-color:var(--gold-border);color:#8a6820;background:var(--gold-light)}
+.stat-card{padding:1.4rem 0;border-bottom:1px solid var(--rule);display:flex;align-items:baseline;justify-content:space-between}
+.stat-card:first-child{border-top:1px solid var(--rule)}
+.sc-fig{font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:400;color:var(--ink)}
+.sc-fig em{font-style:normal;color:var(--gold);font-size:1.15rem}
+.sc-desc{font-size:0.7rem;font-weight:300;color:var(--light);max-width:160px;text-align:right;line-height:1.55}
+.philosophy{margin-top:2.5rem;padding:2rem 2.5rem;background:var(--navy);grid-column:1/-1;position:relative}
+.philosophy::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--gold);opacity:0.15;position:absolute;top:-0.5rem;left:1.5rem;line-height:1}
+.philosophy p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:rgba(245,243,239,0.7);line-height:1.7}
 
-/* CASES */
-.cases-wrap{padding:0 4rem;max-width:1280px;margin:0 auto}
-.cases-table{width:100%;border-collapse:collapse}
-.cases-table th{font-size:0.51rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--light);padding:0.75rem 1.4rem;border-bottom:1px solid var(--border-strong);text-align:left}
-.cases-table td{padding:1.4rem 1.4rem;border-bottom:1px solid var(--border);vertical-align:top}
-.case-row{cursor:pointer;transition:background 0.18s}
-.case-row:hover{background:var(--panel)}
-.case-row:hover .case-expand{opacity:1}
-.case-num{font-family:'Playfair Display',serif;font-size:1rem;color:rgba(0,0,0,0.12)}
-.case-title-cell{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:400;color:var(--black);margin-bottom:0.22rem}
-.case-sub{font-size:0.56rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold)}
-.chip{display:inline-block;font-size:0.5rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.6rem;border:1px solid var(--border-strong);color:var(--mid)}
-.chip.saas{border-color:rgba(201,169,110,0.4);color:#a07840;background:rgba(201,169,110,0.06)}
-.chip.esg{border-color:rgba(22,163,74,0.35);color:#15803d;background:rgba(22,163,74,0.06)}
-.chip.ai{border-color:rgba(26,58,92,0.35);color:var(--blue-accent);background:rgba(26,58,92,0.06)}
-.case-result{font-size:0.63rem;color:var(--mid);line-height:1.6;max-width:260px}
-.case-expand{font-size:0.56rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);opacity:0;transition:opacity 0.18s;white-space:nowrap}
-.case-detail-row td{padding:0}
-.case-detail{display:none;padding:2rem 1.8rem 2.5rem;background:var(--panel);border-bottom:1px solid var(--border-strong)}
-.case-detail.open{display:block}
-.cdi{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2.2rem}
-.cd-label{font-size:0.5rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.65rem;padding-bottom:0.5rem;border-bottom:1px solid var(--gold-border)}
-.cd-body{font-size:0.64rem;line-height:1.85;color:var(--mid)}
-.cd-metrics{display:flex;flex-direction:column;gap:0.65rem}
-.dm{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
-.dm-k{font-size:0.54rem;letter-spacing:0.05em;color:var(--mid)}
-.dm-v{font-family:'Playfair Display',serif;font-size:0.92rem;color:var(--black)}
+.exp-wrap{background:var(--warm)}
+.exp-item{display:grid;grid-template-columns:220px 1fr;gap:3rem;padding:2.5rem 0;border-bottom:1px solid var(--rule)}
+.exp-item:last-child{border:none}
+.exp-date{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.4rem}
+.exp-co{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin-bottom:0.2rem}
+.exp-geo{font-size:0.66rem;color:var(--light);letter-spacing:0.04em}
+.exp-chips{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.8rem}
+.exp-chip{font-size:0.56rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border:1px solid}
+.chip-pm{border-color:rgba(26,58,92,0.4);color:var(--accent);background:rgba(26,58,92,0.06)}
+.chip-erp{border-color:var(--gold-border);color:#7a5520;background:var(--gold-light)}
+.chip-pre{border-color:rgba(0,0,0,0.15);color:var(--mid)}
+.exp-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--ink);margin-bottom:1.2rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:0.75rem}
+.exp-bullets li{font-size:0.8rem;line-height:1.85;color:var(--mid);padding-left:1.1rem;position:relative;font-weight:300}
+.exp-bullets li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:0.55rem;top:0.18rem}
+.exp-bullets li strong{color:var(--ink);font-weight:500}
+.exp-bullets li.highlight{background:var(--gold-light);padding:0.55rem 0.55rem 0.55rem 1.6rem;margin-left:-0.55rem}
+.exp-bullets li.highlight::before{left:0.55rem}
 
-/* data viz inside case */
-.mini-chart{margin-top:1rem}
-.mini-chart-title{font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem}
-.bar-row{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.45rem}
-.bar-label{font-size:0.56rem;color:var(--mid);width:110px;flex-shrink:0;text-align:right}
-.bar-track{flex:1;height:6px;background:rgba(0,0,0,0.07);position:relative;border-radius:0}
-.bar-fill{height:100%;position:absolute;top:0;left:0;transition:width 1s ease}
-.bar-val{font-size:0.54rem;color:var(--black);font-weight:500;min-width:36px}
+.cases-grid{display:flex;flex-direction:column}
+.case-item{border-bottom:1px solid var(--rule-strong)}
+.case-trigger{display:grid;grid-template-columns:56px 1fr auto auto;gap:1.5rem;align-items:center;padding:1.8rem 3.5rem;cursor:pointer;transition:background 0.18s}
+.case-trigger:hover{background:var(--warm)}
+.case-trigger:hover .case-expand-btn{opacity:1}
+.case-num{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:rgba(0,0,0,0.1)}
+.case-name{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ink);margin-bottom:0.2rem}
+.case-sub-label{font-size:0.64rem;color:var(--gold);letter-spacing:0.07em;text-transform:uppercase}
+.case-type{font-size:0.6rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.7rem;border:1px solid var(--rule-strong);color:var(--mid);white-space:nowrap}
+.case-type.pm{border-color:rgba(26,58,92,0.3);color:var(--accent);background:rgba(26,58,92,0.05)}
+.case-expand-btn{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);opacity:0;transition:opacity 0.18s;white-space:nowrap}
+.case-body{display:none;padding:2rem 3.5rem 2.5rem 7rem;background:var(--panel)}
+.case-body.open{display:block}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.cg-label{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.65rem;padding-bottom:0.5rem;border-bottom:1px solid var(--gold-border)}
+.cg-text{font-size:0.76rem;line-height:1.9;color:var(--mid);font-weight:300}
+.cg-text strong{color:var(--ink);font-weight:500}
+.cg-metrics{display:flex;flex-direction:column;gap:0.6rem}
+.metric-row{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:0.5rem;border-bottom:1px solid var(--rule)}
+.metric-row:last-child{border:none}
+.metric-key{font-size:0.64rem;color:var(--light);letter-spacing:0.03em}
+.metric-val{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--ink)}
 
-/* CAMPAIGN */
-.campaign-shell{background:var(--black);padding:5rem 4rem;position:relative;overflow:hidden}
-.camp-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.025) 1px,transparent 1px);background-size:50px 50px;pointer-events:none}
-.camp-inner{max-width:1280px;margin:0 auto;position:relative;z-index:2}
-.camp-kicker{font-size:0.54rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem}
-.camp-headline{font-family:'Playfair Display',serif;font-size:clamp(2.3rem,5vw,4rem);font-weight:400;color:var(--off-white);line-height:1.05;margin-bottom:0.4rem}
-.camp-headline em{font-style:italic;color:var(--gold)}
-.camp-sub{font-size:0.66rem;font-weight:300;color:rgba(247,245,242,0.36);letter-spacing:0.05em;margin-bottom:2.2rem}
-.camp-meta{display:flex;gap:2.2rem;flex-wrap:wrap;padding:1.6rem 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.2rem}
-.cm-k{font-size:0.46rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,245,242,0.26);margin-bottom:0.18rem}
-.cm-v{font-size:0.68rem;color:rgba(247,245,242,0.68);font-weight:300}
-.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06)}
-.phase{background:var(--black);padding:1.6rem 1.4rem}
-.ph-q{font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.55rem}
-.ph-t{font-family:'Playfair Display',serif;font-size:0.95rem;color:var(--off-white);margin-bottom:0.65rem}
-.ph-b{font-size:0.59rem;line-height:1.78;color:rgba(247,245,242,0.4)}
-.camp-kpis{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,0.07);margin-top:2.2rem}
-.ck{padding:1.5rem 0 0}
-.ck-num{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--off-white);line-height:1;margin-bottom:0.22rem}
-.ck-num span{color:var(--gold)}
-.ck-label{font-size:0.48rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(247,245,242,0.26)}
+.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.approach-card{padding:2rem;border:1px solid var(--rule);background:var(--warm);position:relative;overflow:hidden}
+.approach-card::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:var(--gold);transform:scaleY(0);transform-origin:top;transition:transform 0.3s ease}
+.approach-card:hover::before{transform:scaleY(1)}
+.approach-num{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--gold);margin-bottom:0.8rem;letter-spacing:0.1em}
+.approach-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin-bottom:0.7rem}
+.approach-desc{font-size:0.75rem;line-height:1.9;color:var(--mid);font-weight:300}
 
-/* ═══ AI AGENTS ═══ */
-.agents-lede{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.8rem;align-items:end}
-.agents-lede-text{font-size:0.69rem;line-height:1.9;font-weight:300;color:var(--mid)}
-.agents-badge{padding:1.3rem;background:var(--gold-dim);border:1px solid var(--gold-border)}
-.ab-label{font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
-.ab-text{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--black)}
-.agents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.ai-bg{background:var(--navy)}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.project-card{border:1px solid rgba(255,255,255,0.07);padding:2rem;position:relative;overflow:hidden;transition:border-color 0.25s,background 0.25s;background:rgba(255,255,255,0.02)}
+.project-card:hover{border-color:var(--gold-border);background:rgba(184,151,90,0.05)}
+.project-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease}
+.project-card:hover::after{transform:scaleX(1)}
+.proj-num{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.13em;color:rgba(184,151,90,0.5);margin-bottom:0.8rem}
+.proj-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:400;color:var(--paper);margin-bottom:0.6rem;line-height:1.2}
+.proj-type{font-size:0.62rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.proj-desc{font-size:0.75rem;line-height:1.85;color:rgba(245,243,239,0.45);font-weight:300;margin-bottom:1.2rem}
+.proj-skills{display:flex;flex-wrap:wrap;gap:0.35rem}
+.proj-skill{font-size:0.58rem;padding:0.25rem 0.6rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.35);letter-spacing:0.04em}
 
-.agent-card{border:1px solid var(--border-strong);background:var(--warm-white);display:flex;flex-direction:column;position:relative;overflow:hidden}
-.agent-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease}
-.agent-card:hover::before{transform:scaleX(1)}
-.agent-head{padding:1.3rem;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start}
-.agent-num{font-size:0.42rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.28rem}
-.agent-name{font-family:'Playfair Display',serif;font-size:1rem;font-weight:400;color:var(--black);line-height:1.2}
-.agent-live{display:flex;align-items:center;gap:0.32rem;font-size:0.46rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid)}
-.live-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:pulseDot 2s infinite}
-.agent-workflow{padding:0.9rem 1.3rem;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0;overflow-x:auto}
-.wf-step{display:flex;align-items:center;gap:0;flex-shrink:0}
-.wf-node{font-size:0.48rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;padding:0.22rem 0.5rem;background:var(--panel);border:1px solid var(--border-strong);color:var(--mid);white-space:nowrap}
-.wf-node.active{background:var(--gold-dim);border-color:var(--gold-border);color:#8a6020}
-.wf-arrow{font-size:0.6rem;color:var(--border-strong);padding:0 0.3rem;flex-shrink:0}
-.agent-desc{padding:0.85rem 1.3rem;font-size:0.61rem;line-height:1.72;color:var(--mid);border-bottom:1px solid var(--border)}
-.agent-chat{flex:1;padding:1.2rem;display:flex;flex-direction:column;min-height:260px}
-.chat-hist{flex:1;display:flex;flex-direction:column;gap:0.65rem;margin-bottom:0.8rem;overflow-y:auto;max-height:175px}
-.msg{display:flex;flex-direction:column;gap:0.15rem}
-.msg-role{font-size:0.44rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--light)}
-.msg-bubble{font-size:0.62rem;line-height:1.68;padding:0.65rem 0.8rem;max-width:93%}
-.msg.user{align-items:flex-end}
-.msg.user .msg-bubble{background:var(--panel);color:var(--black)}
-.msg.assistant{align-items:flex-start}
-.msg.assistant .msg-bubble{background:var(--black);color:var(--off-white)}
-.typing{display:none;align-items:center;gap:0.32rem;padding:0.35rem 0}
-.typing.active{display:flex}
-.tdot{width:4px;height:4px;border-radius:50%;background:var(--gold);animation:tdotB 1.2s infinite}
-.tdot:nth-child(2){animation-delay:0.16s}
-.tdot:nth-child(3){animation-delay:0.32s}
-.chat-row{display:flex;border:1px solid var(--border-strong)}
-.chat-in{flex:1;border:none;outline:none;padding:0.6rem 0.8rem;font-family:'DM Sans',sans-serif;font-size:0.62rem;color:var(--black);background:var(--warm-white);resize:none}
-.chat-btn{background:var(--black);color:var(--off-white);border:none;cursor:pointer;padding:0 1rem;font-size:0.56rem;letter-spacing:0.1em;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:500;transition:background 0.18s;white-space:nowrap}
-.chat-btn:hover{background:var(--blue-accent)}
-.chat-btn:disabled{opacity:0.35;cursor:not-allowed}
-.suggestions{padding:0 1.2rem 1.2rem;display:flex;flex-wrap:wrap;gap:0.35rem}
-.sc{font-size:0.52rem;padding:0.25rem 0.58rem;border:1px solid var(--border-strong);color:var(--mid);cursor:pointer;transition:all 0.18s;background:transparent;font-family:'DM Sans',sans-serif}
-.sc:hover{border-color:var(--gold);color:var(--black);background:var(--gold-dim)}
+.cert-section{background:var(--ink)}
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.cert-card{border:1px solid rgba(255,255,255,0.08);padding:2rem;position:relative}
+.cert-card.featured{border-color:var(--gold-border);background:rgba(184,151,90,0.06)}
+.cert-issuer{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.cert-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--paper);margin-bottom:0.4rem;line-height:1.25}
+.cert-date{font-size:0.65rem;color:rgba(245,243,239,0.3);margin-bottom:0.4rem}
+.cert-id{font-family:'DM Mono',monospace;font-size:0.54rem;color:rgba(245,243,239,0.2);letter-spacing:0.06em}
+.cert-badge{position:absolute;top:1.5rem;right:1.5rem;font-size:0.54rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.28rem 0.65rem;background:var(--gold);color:var(--navy)}
 
-/* CV */
-.cv-layout{display:grid;grid-template-columns:250px 1fr;gap:4rem}
-.cv-sb-block{margin-bottom:2rem}
-.cv-sb-label{font-size:0.48rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);padding-bottom:0.55rem;border-bottom:1px solid var(--gold-border);margin-bottom:0.85rem}
-.skill-pill{display:inline-block;font-size:0.52rem;letter-spacing:0.04em;color:var(--mid);border:1px solid var(--border-strong);padding:0.2rem 0.5rem;margin:0 0.25rem 0.28rem 0;transition:all 0.18s}
-.skill-pill:hover{border-color:var(--gold);color:var(--black)}
-.skill-pill.saas-tag{border-color:rgba(201,169,110,0.35);color:#9a7040}
-.lang-item{margin-bottom:0.85rem}
-.lang-name{font-size:0.62rem;color:var(--black);display:flex;justify-content:space-between;margin-bottom:0.22rem}
-.lang-name span{font-size:0.52rem;color:var(--light)}
-.lang-track{height:2px;background:var(--border-strong);position:relative}
-.lang-fill{height:100%;background:var(--gold);position:absolute;top:0;left:0}
-.role-split{display:flex;align-items:center;gap:0.6rem;margin-bottom:0.18rem;flex-wrap:wrap}
-.role-chip{font-size:0.48rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;padding:0.18rem 0.5rem;border:1px solid}
-.role-chip.pre{border-color:rgba(201,169,110,0.5);color:#9a7040;background:rgba(201,169,110,0.07)}
-.role-chip.impl{border-color:rgba(26,58,92,0.4);color:var(--blue-accent);background:rgba(26,58,92,0.06)}
-.role-chip.mktg{border-color:rgba(0,0,0,0.18);color:var(--mid)}
-.role-chip.csm{border-color:rgba(15,76,92,0.45);color:var(--teal);background:rgba(15,76,92,0.06)}
-.cv-exp-item{padding-bottom:1.8rem;margin-bottom:1.8rem;border-bottom:1px solid var(--border)}
-.cv-exp-item:last-child{border:none}
-.cv-exp-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.16rem;flex-wrap:wrap;gap:0.4rem}
-.cv-exp-title{font-family:'Playfair Display',serif;font-size:0.98rem;font-weight:400;color:var(--black)}
-.cv-exp-date{font-size:0.54rem;color:var(--light);white-space:nowrap}
-.cv-exp-co{font-size:0.54rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.65rem}
-.cv-bullets{list-style:none;display:flex;flex-direction:column;gap:0.38rem}
-.cv-bullets li{font-size:0.62rem;line-height:1.72;color:var(--mid);padding-left:0.9rem;position:relative}
-.cv-bullets li::before{content:'▸';position:absolute;left:0;color:var(--gold);font-size:0.5rem;top:0.1rem}
-.cv-bullets li strong{color:var(--black);font-weight:500}
-.cv-section-divider{font-size:0.48rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);padding:0.65rem 0;border-top:1px solid var(--gold-border);border-bottom:1px solid var(--gold-border);margin-bottom:1.4rem;margin-top:0.4rem}
-.cv-dl{display:inline-flex;align-items:center;gap:0.65rem;font-size:0.54rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--off-white);background:var(--black);padding:0.8rem 1.6rem;text-decoration:none;border:1px solid var(--black);transition:all 0.22s;margin-top:1.4rem}
-.cv-dl:hover{background:var(--blue-accent);border-color:var(--blue-accent)}
-
-/* CONTACT */
-.contact-shell{background:var(--black);padding:6.5rem 4rem;position:relative;overflow:hidden}
-.contact-glow{position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(15,76,92,0.38) 0%,transparent 70%);pointer-events:none}
+.contact-shell{background:var(--navy);padding:7rem 3.5rem;position:relative;overflow:hidden}
+.contact-glow{position:absolute;bottom:-30%;left:-5%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(15,76,92,0.4) 0%,transparent 70%);pointer-events:none}
 .contact-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
-.contact-eyebrow{font-size:0.54rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:0.65rem}
-.contact-eyebrow::before{content:'';width:16px;height:1px;background:var(--gold)}
-.contact-hl{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.8vw,3.2rem);font-weight:400;color:var(--off-white);line-height:1.1;margin-bottom:1.1rem}
-.contact-hl em{font-style:italic;color:var(--gold)}
-.contact-sub{font-size:0.64rem;line-height:1.9;color:rgba(247,245,242,0.4);font-weight:300}
-.contact-tracks{display:flex;flex-direction:column;gap:0.45rem;margin-top:1.4rem}
-.ct-row{display:flex;align-items:center;gap:0.55rem;font-size:0.58rem;color:rgba(247,245,242,0.52);padding:0.35rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.ct-row:last-child{border:none}
-.ct-pip{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.contact-eyebrow{font-family:'DM Mono',monospace;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.7rem}
+.contact-eyebrow::before{content:'';width:18px;height:1px;background:var(--gold)}
+.contact-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:300;color:var(--paper);line-height:1.05;margin-bottom:1.2rem}
+.contact-headline em{font-style:italic;color:var(--gold)}
+.contact-body{font-size:0.78rem;line-height:1.9;color:rgba(245,243,239,0.4);font-weight:300;margin-bottom:1.5rem}
+.open-to-list{display:flex;flex-direction:column;gap:0.4rem}
+.ot-item{display:flex;align-items:center;gap:0.6rem;font-size:0.72rem;color:rgba(245,243,239,0.5);padding:0.38rem 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.ot-item:last-child{border:none}
+.ot-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .contact-links{display:flex;flex-direction:column}
-.clr{display:flex;justify-content:space-between;align-items:center;padding:1.3rem 0;border-bottom:1px solid rgba(255,255,255,0.07);text-decoration:none;transition:padding-left 0.22s;cursor:pointer}
-.clr:first-child{border-top:1px solid rgba(255,255,255,0.07)}
-.clr:hover{padding-left:0.45rem}
-.clr-type{font-size:0.48rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(247,245,242,0.26)}
-.clr-val{font-family:'Playfair Display',serif;font-size:0.92rem;color:var(--off-white);font-weight:400}
-.clr-arrow{color:var(--gold);font-size:0.9rem;transition:transform 0.22s}
-.clr:hover .clr-arrow{transform:translateX(4px)}
+.cl-item{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 0;border-bottom:1px solid rgba(255,255,255,0.06);text-decoration:none;transition:padding-left 0.22s}
+.cl-item:first-child{border-top:1px solid rgba(255,255,255,0.06)}
+.cl-item:hover{padding-left:0.5rem}
+.cl-label{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.13em;text-transform:uppercase;color:rgba(245,243,239,0.25);margin-bottom:0.2rem}
+.cl-value{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--paper)}
+.cl-arrow{color:var(--gold);font-size:1rem;transition:transform 0.22s}
+.cl-item:hover .cl-arrow{transform:translateX(5px)}
 
-footer{background:var(--black);padding:1.3rem 4rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.05)}
-.footer-mark{font-family:'Playfair Display',serif;font-size:0.85rem;color:rgba(247,245,242,0.32)}
-.footer-copy{font-size:0.48rem;letter-spacing:0.08em;color:rgba(247,245,242,0.16)}
+footer{background:var(--ink);padding:1.5rem 3.5rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.04)}
+.footer-left{font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(245,243,239,0.3)}
+.footer-right{font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.07em;color:rgba(245,243,239,0.15)}
 
-/* ANIMATIONS */
-@keyframes riseIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-@keyframes scrollDrop{0%,100%{opacity:0;transform:scaleY(0.3);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
-@keyframes pulseDot{0%,100%{opacity:1}50%{opacity:0.32}}
-@keyframes tdotB{0%,80%,100%{transform:translateY(0)}40%{transform:translateY(-5px)}}
-@keyframes fadeMsg{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes scrollPulse{0%,100%{opacity:0;transform:scaleY(0.3);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
 
 @media(max-width:960px){
   nav{padding:0 1.5rem}.nav-links{display:none}
-  #hero,.section,.campaign-shell,.contact-shell{padding-left:1.5rem;padding-right:1.5rem}
-  .section{padding-top:3.5rem;padding-bottom:3.5rem}
-  .about-grid,.agents-lede,.contact-inner{grid-template-columns:1fr}
-  .agents-grid{grid-template-columns:1fr}
-  .phases{grid-template-columns:1fr 1fr}
-  .camp-kpis{grid-template-columns:1fr 1fr}
-  .cv-layout{grid-template-columns:1fr}
-  .cdi{grid-template-columns:1fr}
-  .cases-wrap{padding:0 1.5rem}
-  .hero-bottom{flex-direction:column;align-items:flex-start}
-  footer{flex-direction:column;gap:0.4rem;padding:1.2rem;text-align:center}
+  #hero{grid-template-columns:1fr}.hero-right{display:none}
+  .hero-left{padding:7rem 1.5rem 3.5rem}
+  .section,.section-full{padding:3.5rem 1.5rem}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem}
+  .philosophy{grid-column:1}
+  .case-trigger{grid-template-columns:40px 1fr;gap:1rem;padding:1.4rem 1.5rem}
+  .case-type,.case-expand-btn{display:none}
+  .case-body{padding:1.5rem}
+  .case-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .certs-grid{grid-template-columns:1fr}
+  .approach-grid{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr;gap:2.5rem}
+  .contact-shell{padding:4rem 1.5rem}
+  .exp-item{grid-template-columns:1fr;gap:1rem}
+  footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1.2rem}
 }
-/* CAMPAIGN SEGMENT TABS */
-.seg-tabs{display:flex;gap:1px;background:rgba(255,255,255,0.08);margin-bottom:0}
-.seg-tab{flex:1;background:rgba(255,255,255,0.03);border:none;cursor:pointer;padding:1.2rem 1.5rem;text-align:left;transition:background 0.2s;display:flex;flex-direction:column;gap:0.2rem}
-.seg-tab:hover{background:rgba(255,255,255,0.07)}
-.seg-tab.active{background:rgba(201,169,110,0.12);border-bottom:2px solid var(--gold)}
-.seg-tab-label{font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(247,245,242,0.3);font-family:'DM Sans',sans-serif}
-.seg-tab-name{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--off-white)}
-.seg-tab.active .seg-tab-name{color:var(--gold)}
-.seg-tab-budget{font-size:0.56rem;color:rgba(247,245,242,0.4);font-family:'DM Sans',sans-serif;letter-spacing:0.04em}
-.seg-tab.active .seg-tab-budget{color:rgba(201,169,110,0.8)}
-.budget-note{margin-top:2rem;padding:1rem 1.4rem;border-left:2px solid var(--gold);font-size:0.58rem;line-height:1.75;color:rgba(247,245,242,0.35);font-style:italic}
-
-@media(max-width:960px){.seg-tabs{flex-direction:column}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
-  <a href="#hero" class="nav-wordmark">Harsh Tanwar<span class="nav-dot"></span></a>
+  <a href="#hero" class="nav-brand">
+    <span class="nav-name">Harsh Tanwar</span>
+    <span class="nav-cert">PMP</span>
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#cases">Work</a></li>
-    <li><a href="#campaign">Campaign</a></li>
-    <li><a href="#ai-agents">AI Studio</a></li>
-    <li><a href="#cv">CV</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#cases">Case Studies</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <div id="hero">
-  <div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-glow2"></div>
-  <div class="hero-inner">
-    <p class="hero-tag">Paris · India · Vietnam · Bangladesh</p>
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Paris &middot; India &middot; Vietnam &middot; Bangladesh</p>
     <h1 class="hero-name">Harsh<br/><em>Tanwar</em></h1>
-    <div class="hero-tracks">
-      <div class="track-badge saas"><span class="track-pip"></span>Pre-Sales and Implementation in SaaS</div>
-      <div class="track-badge saas" style="border-color:rgba(15,76,92,0.45);color:#3a8a9a"><span class="track-pip" style="background:#3a8a9a"></span>Customer Success Management</div>
-      <div class="track-badge mktg"><span class="track-pip"></span>Trade Marketing · Brand Strategy</div>
-      <div class="track-badge saas" style="border-color:rgba(139,92,246,0.45);color:#a78bfa"><span class="track-pip" style="background:#a78bfa"></span>AI &amp; Agentic Technologies</div>
-    </div>
-    <div class="hero-bottom">
-      <p class="hero-statement">Three years closing deals, deploying ERP across 50+ factory sites, owning 15+ client accounts, and building AI-powered tools that compress weeks of analysis into minutes.</p>
-      <div class="hero-stats">
-        <div><div class="hs-num">50<span>+</span></div><div class="hs-label">Sites Deployed</div></div>
-        <div><div class="hs-num">15<span>%</span></div><div class="hs-label">Avg DHU Reduction</div></div>
-        <div><div class="hs-num">15<span>+</span></div><div class="hs-label">Accounts Managed</div></div>
-        <div><div class="hs-num">3</div><div class="hs-label">Countries</div></div>
-      </div>
+    <p class="hero-title">PMP Certified Project Manager &amp; ERP Implementation Consultant</p>
+    <p class="hero-statement">Three years. 40+ sites. Three countries.<br/>From discovery to go-live and beyond.</p>
+    <div class="hero-cta-row">
+      <a href="#cases" class="btn-primary">View Case Studies</a>
+      <a href="./Harsh_Tanwar_CV.pdf" class="btn-secondary" download>Download CV</a>
     </div>
   </div>
-  <div class="hero-scroll"><div class="scroll-bar"></div><div class="scroll-txt">Scroll</div></div>
+  <div class="hero-right">
+    <p class="hero-stats-label">Delivery metrics &middot; 2021 to 2024</p>
+    <div>
+      <div class="hero-stat" style="animation:fadeUp 0.7s 0.8s forwards">
+        <div class="hs-fig">40<sup>+</sup></div>
+        <div class="hs-desc">Sites deployed across India, Vietnam and Bangladesh</div>
+      </div>
+      <div class="hero-stat" style="animation:fadeUp 0.7s 1s forwards">
+        <div class="hs-fig">2,500<sup>+</sup></div>
+        <div class="hs-desc">End users trained across all deployments</div>
+      </div>
+      <div class="hero-stat" style="animation:fadeUp 0.7s 1.1s forwards">
+        <div class="hs-fig">700<sup>+</sup></div>
+        <div class="hs-desc">Production lines digitized</div>
+      </div>
+      <div class="hero-stat" style="animation:fadeUp 0.7s 1.2s forwards">
+        <div class="hs-fig">100<sup>%</sup></div>
+        <div class="hs-desc">Launch readiness, zero failed activations</div>
+      </div>
+    </div>
+    <div class="hero-cert-block">
+      <div class="hcb-label">Certification</div>
+      <div class="hcb-value">Project Management Professional (PMP)</div>
+      <div class="hcb-meta">PMI &middot; Issued May 2026 &middot; ID 4379418 &middot; Valid through 2029</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <div class="scroll-text">Scroll</div>
+  </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about" class="section">
-  <div class="slabel"><span class="slabel-num">01</span><div class="slabel-rule"></div><h2 class="slabel-text">About</h2></div>
+  <div class="section-header">
+    <span class="sh-num">01</span><div class="sh-rule"></div>
+    <h2 class="sh-title">About</h2>
+  </div>
   <div class="about-grid">
     <div>
-      <p class="about-p">I close deals, deliver ERP implementations across three countries, retain 15+ accounts, and build AI agents that automate the work that used to take a team.</p>
-      <p class="about-sm">With a background in Fashion Technology (NIFT, New Delhi) and a Masters in Luxury &amp; Fashion Management (Paris School of Business), I spent three years at Solvei8 in three interlocking roles: pre-sales consultant owning the full sales cycle, implementation lead deploying Plani8, Tracki8, and Maintaini8 across 50+ garment factory sites, and customer success manager growing and retaining 15+ accounts across India, Vietnam, and Bangladesh.</p>
-      <p class="about-sm">At pre-sales, I ran discovery workshops, built ROI models quantifying 10–15% DHU reduction and 12–15% cost savings, and demoed to factory directors at organisations of 500–5,000 employees. Post-sale, I owned deployment end to end: workflow design, ERP integration, training workforces of up to 300+. Post-go-live, I stayed with the client, conducting monthly performance reviews, upsell identification and escalation handling, ensuring every account hit its KPIs and renewed.</p>
+      <p class="about-lede">Three years on the ground across Asia. Now PMP certified and based in Paris. I deliver complex transformation projects that actually stick.</p>
+      <p class="about-body">I am a project manager and ERP implementation consultant who has delivered complex digital transformation programs across manufacturing, retail, and distribution operations in India, Vietnam, and Bangladesh. I manage the full project lifecycle, from discovery and scoping through configuration, UAT, training, and go-live, coordinating cross-functional teams and executive stakeholders across geographies and time zones.</p>
+      <p class="about-body">What I bring to every engagement: end-to-end delivery accountability, stakeholder alignment at every level, change management that drives real adoption rather than shelf-ware, process mapping and KPI governance, and pre-sales consulting experience across SaaS and ERP platforms.</p>
       <div class="about-divider"></div>
-      <p class="about-sm">Beyond SaaS, I bring genuine depth in trade marketing, brand strategy, and AI-enabled operations. I design and deploy multi-agent AI systems for trend intelligence, luxury copywriting and retail pricing: applied tools, not demos. Based in Paris since October 2024. Available immediately across Europe and the Middle East.</p>
-    </div>
-    <div>
-      <div class="kpi-stack">
-        <div class="kpi-row"><div class="kpi-fig">50<em>+</em></div><div class="kpi-desc">Factory sites deployed across India, Vietnam and Bangladesh, with 100% launch readiness on every activation</div></div>
-        <div class="kpi-row"><div class="kpi-fig">10–15<em>%</em></div><div class="kpi-desc">DHU (defects/unit) reduction delivered post-implementation, measured at 3–5 month KPI sign-off</div></div>
-        <div class="kpi-row"><div class="kpi-fig">12–15<em>%</em></div><div class="kpi-desc">Cost reduction achieved over 3–5 months post go-live across the account portfolio</div></div>
-        <div class="kpi-row"><div class="kpi-fig">6–10<em>%</em></div><div class="kpi-desc">Production efficiency gain per site, measured against pre-deployment baseline KPIs</div></div>
-        <div class="kpi-row"><div class="kpi-fig">300<em>+</em></div><div class="kpi-desc">Largest single-site workforce trained in one implementation rollout</div></div>
-        <div class="kpi-row"><div class="kpi-fig">15<em>+</em></div><div class="kpi-desc">Active client accounts managed as CSM, covering monthly QBRs, upsell pipeline and escalation ownership</div></div>
-        <div class="kpi-row"><div class="kpi-fig">#1</div><div class="kpi-desc">Cesim marketing simulation ranking, 15-team cohort at Paris School of Business</div></div>
+      <p class="about-body">Currently based in Paris. MSc in Luxury and Fashion Management from Paris School of Business. B.Tech in Fashion Technology from NIFT New Delhi. PMP certified May 2026. Open to project management, ERP and PLM consulting, pre-sales, and supply chain transformation roles globally.</p>
+      <div class="comp-label">Core Competencies</div>
+      <div class="comp-tags">
+        <span class="comp-tag primary">Project Lifecycle Management</span>
+        <span class="comp-tag primary">ERP Implementation</span>
+        <span class="comp-tag primary">Stakeholder Management</span>
+        <span class="comp-tag primary">Change Management</span>
+        <span class="comp-tag primary">Agile / Hybrid</span>
+        <span class="comp-tag">Risk Management</span>
+        <span class="comp-tag">UAT</span>
+        <span class="comp-tag">Pre-Sales Consulting</span>
+        <span class="comp-tag">KPI Governance</span>
+        <span class="comp-tag">Power BI</span>
+        <span class="comp-tag">Supply Chain</span>
+        <span class="comp-tag">MES Deployment</span>
+        <span class="comp-tag">User Adoption</span>
+        <span class="comp-tag">Process Mapping</span>
       </div>
     </div>
-    <div class="philosophy-block"><p>The best consultants don't just implement software. They change how an organisation sees itself. That's what I aim for on every deployment: measurable outcomes, lasting adoption, and a client who couldn't imagine going back.</p></div>
+    <div>
+      <div class="stat-card"><div class="sc-fig">40<em>+</em></div><div class="sc-desc">Sites deployed with 100% launch readiness, zero failed activations</div></div>
+      <div class="stat-card"><div class="sc-fig">75&ndash;85<em>%</em></div><div class="sc-desc">Reduction in manual reporting through automated real-time systems</div></div>
+      <div class="stat-card"><div class="sc-fig">97&ndash;100<em>%</em></div><div class="sc-desc">Garment traceability rates achieved across all client sites</div></div>
+      <div class="stat-card"><div class="sc-fig">3&ndash;5<em>%</em></div><div class="sc-desc">DHU reduction through data-driven quality monitoring</div></div>
+      <div class="stat-card"><div class="sc-fig">22<em>+</em></div><div class="sc-desc">Clients across South and Southeast Asia managed and retained</div></div>
+    </div>
+    <div class="philosophy">
+      <p>The best project managers do not just deliver software. They change how an organisation sees itself. That is what I aim for on every engagement: measurable outcomes, lasting adoption, and a client who could not imagine going back.</p>
+    </div>
   </div>
 </section>
 
-<!-- CASE STUDIES -->
-<div id="cases" class="section" style="padding-top:0;max-width:none;padding-left:0;padding-right:0;">
-  <div class="cases-wrap">
-    <div class="slabel"><span class="slabel-num">02</span><div class="slabel-rule"></div><h2 class="slabel-text">Case Studies</h2></div>
-  </div>
-  <table class="cases-table">
-    <thead>
-      <tr>
-        <th style="width:44px;padding-left:4rem"></th>
-        <th>Project</th><th>Type</th><th>Key Result</th><th></th>
-      </tr>
-    </thead>
-    <tbody>
-
-      <!-- CASE 01: SOLVEI8 -->
-      <tr class="case-row" onclick="toggleCase('c0')">
-        <td style="padding-left:4rem"><div class="case-num">01</div></td>
-        <td><div class="case-title-cell">Garment Factory ERP Rollout: Pre-Sales to Go-Live</div><div class="case-sub">Solvei8 · India, Vietnam &amp; Bangladesh · 2021–2024</div></td>
-        <td><span class="chip saas">SaaS Implementation</span></td>
-        <td><div class="case-result">10–15% DHU reduction. 12–15% cost savings. 50+ sites. Workforces of 10–300+ trained per deployment.</div></td>
-        <td><div class="case-expand" id="c0-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c0">
-        <div class="cdi" style="padding:0 2rem">
-          <div>
-            <div class="cd-label">Context &amp; Pre-Sales</div>
-            <div class="cd-body">Solvei8 builds ERP and MES platforms for garment manufacturing, with four products: <strong style="color:var(--black)">Plani8</strong> (production planning &amp; scheduling), <strong style="color:var(--black)">Tracki8</strong> (real-time production execution tracking), <strong style="color:var(--black)">Maintaini8</strong> (maintenance automation), and <strong style="color:var(--black)">Operational Intelligence</strong> dashboards on web and mobile.<br/><br/>As pre-sales consultant, I ran As-Is discovery workshops with factory operations heads, delivered tailored demos to factory directors at organisations of 500–5,000 employees (5 to 100+ assembly lines), and built ROI models quantifying projected DHU reduction (10–15%), cost savings (12–15%), and efficiency gains (6–10%) versus current state. These models were the commercial anchor of every deal.</div>
-          </div>
-          <div>
-            <div class="cd-label">Implementation &amp; Delivery</div>
-            <div class="cd-body">Post-contract, I owned the full delivery lifecycle across all four platforms: To-Be workflow design, ERP and MES integration configuration, web and mobile dashboard setup, and go-live coordination, achieving 100% launch readiness across 50+ sites with no failed activations.<br/><br/>Workforce training was calibrated to site complexity: from 10-person specialist sessions for planning managers to 300+ worker rollouts for line operators. Managed a team of 4 consultants across concurrent deployments. KPI sign-off at 3 to 5 months post go-live was non-negotiable: no account was marked complete until measurable improvement was confirmed against baseline.</div>
-          </div>
-          <div>
-            <div class="cd-label">Measured Outcomes</div>
-            <div class="cd-metrics">
-              <div class="dm"><span class="dm-k">DHU Reduction</span><span class="dm-v">10–15%</span></div>
-              <div class="dm"><span class="dm-k">Cost Reduction</span><span class="dm-v">12–15%</span></div>
-              <div class="dm"><span class="dm-k">Production Efficiency Gain</span><span class="dm-v">6–10%</span></div>
-              <div class="dm"><span class="dm-k">Sites Deployed</span><span class="dm-v">50+ · 0 failed activations</span></div>
-              <div class="dm"><span class="dm-k">Max Workforce Trained</span><span class="dm-v">300+ (single site)</span></div>
-              <div class="dm"><span class="dm-k">Platforms Deployed</span><span class="dm-v">Plani8 · Tracki8 · Maintaini8 · OI</span></div>
-              <div class="dm"><span class="dm-k">Org Size Range</span><span class="dm-v">500–5,000 employees</span></div>
-              <div class="dm"><span class="dm-k">Assembly Lines</span><span class="dm-v">5 → 100+ per site</span></div>
-              <div class="dm"><span class="dm-k">Countries</span><span class="dm-v">India · Vietnam · Bangladesh</span></div>
-            </div>
+<div id="experience" class="section-full exp-wrap">
+  <div class="section" style="padding-top:0;padding-bottom:0">
+    <div class="section-header">
+      <span class="sh-num">02</span><div class="sh-rule"></div>
+      <h2 class="sh-title">Experience</h2>
+    </div>
+    <div>
+      <div class="exp-item">
+        <div>
+          <div class="exp-date">Sep 2021 &mdash; Oct 2024</div>
+          <div class="exp-co">Solvei8</div>
+          <div class="exp-geo">India &middot; Vietnam &middot; Bangladesh</div>
+          <div class="exp-chips">
+            <span class="exp-chip chip-pm">Project Management</span>
+            <span class="exp-chip chip-erp">ERP / MES</span>
+            <span class="exp-chip chip-pre">Pre-Sales</span>
           </div>
         </div>
-      </div></td></tr>
-
-      <!-- CASE 02: CSM -->
-      <tr class="case-row" onclick="toggleCase('c1b')">
-        <td style="padding-left:4rem"><div class="case-num">02</div></td>
-        <td><div class="case-title-cell">Customer Success: 15+ Account Portfolio at Solvei8</div><div class="case-sub">Solvei8 · India, Vietnam &amp; Bangladesh · 2021–2024</div></td>
-        <td><span class="chip saas">Customer Success</span></td>
-        <td><div class="case-result">15+ active accounts managed post-go-live. Monthly performance reviews, upsell pipeline identification, escalation handling, and renewal ownership across garment factories of 500–5,000 employees.</div></td>
-        <td><div class="case-expand" id="c1b-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c1b">
-        <div class="cdi" style="padding:0 2rem">
-          <div>
-            <div class="cd-label">The CSM Model</div>
-            <div class="cd-body">Post go-live, I transitioned from implementation lead to account owner, maintaining the ongoing relationship with each client factory across the full post-deployment lifecycle. The portfolio spanned 15+ accounts of varying size (500–5,000 employees, 5–100+ assembly lines) across India, Vietnam, and Bangladesh, each at different stages of platform maturity and product adoption.<br/><br/>Client confidentiality is maintained throughout. No factory or group names are disclosed. All accounts are described by size and geography only.</div>
-          </div>
-          <div>
-            <div class="cd-label">What the Work Looked Like</div>
-            <div class="cd-body"><strong style="color:var(--black)">Monthly Performance Reviews:</strong> Structured sessions with factory ops directors and plant managers reviewing KPI dashboard outputs covering DHU trends, efficiency indices, maintenance uptime and planning accuracy. Prepared monthly data summaries in advance, presented findings, flagged anomalies, and made operational recommendations. Not just reporting, but actively advising.<br/><br/><strong style="color:var(--black)">Upsell Identification:</strong> Monitored product usage patterns and business growth signals to identify clients ready to expand from one module to additional products. Flagged and scoped expansion opportunities back to the sales team with supporting data and client context.<br/><br/><strong style="color:var(--black)">Escalation &amp; Issue Management:</strong> Served as primary escalation point for platform issues, integration problems, and user adoption blockers. Coordinated internal product and technical teams to resolve within agreed SLAs, maintaining client trust throughout.<br/><br/><strong style="color:var(--black)">Training Refreshers:</strong> Delivered targeted re-training sessions when new features launched, workforce turnover occurred, or adoption metrics dropped below threshold.</div>
-          </div>
-          <div>
-            <div class="cd-label">Account Portfolio Snapshot</div>
-            <div class="cd-metrics">
-              <div class="dm"><span class="dm-k">Accounts Managed</span><span class="dm-v">15+</span></div>
-              <div class="dm"><span class="dm-k">Client Size Range</span><span class="dm-v">500–5,000 employees</span></div>
-              <div class="dm"><span class="dm-k">Assembly Lines / Client</span><span class="dm-v">5 → 100+</span></div>
-              <div class="dm"><span class="dm-k">Geographies</span><span class="dm-v">India, Vietnam, Bangladesh</span></div>
-              <div class="dm"><span class="dm-k">Review Cadence</span><span class="dm-v">Monthly + ad hoc</span></div>
-              <div class="dm"><span class="dm-k">CSM Activities</span><span class="dm-v">Reviews · Upsell · Escalation · Training</span></div>
-              <div class="dm"><span class="dm-k">Products in Scope</span><span class="dm-v">Plani8, Tracki8, Maintaini8, OI</span></div>
-              <div class="dm"><span class="dm-k">Client Names</span><span class="dm-v">Confidential</span></div>
-            </div>
-          </div>
+        <div>
+          <div class="exp-title">Solution Consultant &mdash; ERP and MES Implementation</div>
+          <ul class="exp-bullets">
+            <li class="highlight">Led 5 parallel digital transformation programs across 40+ manufacturing sites and 22+ clients, covering 700+ production lines and 2,500+ end users across India, Bangladesh, and Vietnam. Managed full project lifecycle from discovery and scoping through <strong>UAT, go-live, and post-implementation review</strong> using hybrid project management methodology, ensuring on-time and on-scope delivery across all concurrent workstreams.</li>
+            <li>Drove end-to-end process digitization achieving 100% digital coverage. Developed and maintained <strong>project plans, risk registers, and milestone trackers</strong>, reducing manual reporting by 75&ndash;85% through automated real-time production visibility systems and structured change management programs.</li>
+            <li>Delivered garment traceability rates of 97&ndash;100% across all client sites by embedding quality governance into project delivery frameworks, improving operational control, audit readiness, and supply chain transparency.</li>
+            <li>Achieved 3&ndash;5% reduction in DHU through data-driven quality monitoring. Conducted <strong>root cause analysis</strong> and facilitated cross-functional workshops across manufacturing, quality, and industrial engineering stakeholders.</li>
+            <li>Managed stakeholder engagement from <strong>C-suite and factory directors</strong> through to production supervisors and end users. Led <strong>steering committee meetings, sprint reviews, and executive status reporting</strong> across geographies and time zones.</li>
+            <li>Supported pre-sales including client discovery sessions, requirements gathering, solution scoping, <strong>effort estimation</strong>, and implementation proposals. Contributed to new account acquisition and portfolio expansion across South and Southeast Asia.</li>
+          </ul>
         </div>
-      </div></td></tr>
-
-      <!-- CASE 03: SUSTAINABILITY -->
-      <tr class="case-row" onclick="toggleCase('c1')">
-        <td style="padding-left:4rem"><div class="case-num">03</div></td>
-        <td><div class="case-title-cell">The Sustainability &amp; Waste Optimizer</div><div class="case-sub">ESG · Supply Chain · Fashion Overproduction</div></td>
-        <td><span class="chip esg">ESG / Supply Chain</span></td>
-        <td><div class="case-result">Fashion overproduction costs the industry $500B/year. Demand-sensing models cut excess inventory by 20–35%, markdown rates by 18%, and Scope 3 emissions by 12%.</div></td>
-        <td><div class="case-expand" id="c1-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c1">
-        <div class="cdi" style="padding:0 2rem">
-          <div>
-            <div class="cd-label">The Problem</div>
-            <div class="cd-body">Fashion overproduction is one of the industry's most expensive and environmentally damaging failures. The numbers are damning: the global fashion industry produces 100 billion garments per year, of which approximately 30 to 40% go unsold. The Ellen MacArthur Foundation estimates overproduction costs brands $500B annually in lost revenue from markdowns and deadstock. McKinsey's 2023 State of Fashion report identified "inventory management" as the #1 operational risk cited by fashion executives.<br/><br/>The root cause is structural: buying decisions are made 9–12 months in advance using historical sell-through data and intuition-based trend forecasting. By the time collections hit the floor, the market has moved.</div>
-            <div class="mini-chart" id="waste-chart">
-              <div class="mini-chart-title">Industry Overproduction by Segment (% of units unsold)</div>
-              <div class="bar-row"><div class="bar-label">Fast Fashion</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#dc2626" data-w="45%"></div></div><div class="bar-val">45%</div></div>
-              <div class="bar-row"><div class="bar-label">Mid-Market</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#f59e0b" data-w="28%"></div></div><div class="bar-val">28%</div></div>
-              <div class="bar-row"><div class="bar-label">Premium</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="18%"></div></div><div class="bar-val">18%</div></div>
-              <div class="bar-row"><div class="bar-label">Luxury</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#16a34a" data-w="8%"></div></div><div class="bar-val">8%</div></div>
-            </div>
-          </div>
-          <div>
-            <div class="cd-label">The Optimizer Framework</div>
-            <div class="cd-body">A four-layer demand-sensing and ESG alignment system aligned with modern supply chain operations:<br/><br/><strong style="color:var(--black)">Layer 1: Real-Time Demand Signals:</strong> Replace historical buy sheets with live sell-through data feeds, social trend velocity scores (Heuritech, Trendalytics), and regional weather/event triggers integrated into the planning tool.<br/><br/><strong style="color:var(--black)">Layer 2: Dynamic MOQ Negotiation:</strong> Implement rolling 6-week order windows with factory partners instead of season-locked minimums. Requires pre-negotiated flexibility clauses, a change management exercise as much as a commercial one.<br/><br/><strong style="color:var(--black)">Layer 3: ESG KPI Dashboard:</strong> Track Scope 3 emissions per SKU, markdown rate by category, and deadstock-to-donation ratio, reported at buyer level rather than just at the sustainability team level.<br/><br/><strong style="color:var(--black)">Layer 4: End-of-Life Protocol:</strong> Pre-defined decision tree for slow-movers: reprice → partner channel → charity donation → fibre recycling. Eliminates landfill as a default.</div>
-          </div>
-          <div>
-            <div class="cd-label">Benchmark Outcomes</div>
-            <div class="cd-metrics">
-              <div class="dm"><span class="dm-k">Excess Inventory Reduction</span><span class="dm-v">20–35%</span></div>
-              <div class="dm"><span class="dm-k">Markdown Rate Improvement</span><span class="dm-v">–18%</span></div>
-              <div class="dm"><span class="dm-k">Scope 3 Emissions Reduction</span><span class="dm-v">–12%</span></div>
-              <div class="dm"><span class="dm-k">Working Capital Freed</span><span class="dm-v">+22%</span></div>
-              <div class="dm"><span class="dm-k">Source</span><span class="dm-v">McKinsey SoF 2023</span></div>
-              <div class="dm"><span class="dm-k">Industry Waste / Year</span><span class="dm-v">$500B+</span></div>
-              <div class="dm"><span class="dm-k">Garments Overproduced</span><span class="dm-v">30–40%</span></div>
-              <div class="dm"><span class="dm-k">Framework Status</span><span class="dm-v">Concept + Applied</span></div>
-            </div>
-          </div>
-        </div>
-      </div></td></tr>
-
-      <!-- CASE 04: HEURITECH AI TREND -->
-      <tr class="case-row" onclick="toggleCase('c2')">
-        <td style="padding-left:4rem"><div class="case-num">04</div></td>
-        <td><div class="case-title-cell">AI Trend Forecasting: The Heuritech Model</div><div class="case-sub">Image Recognition · Fashion Intelligence · Runway Prediction</div></td>
-        <td><span class="chip ai">AI / Trend Tech</span></td>
-        <td><div class="case-result">Heuritech forecasted "dotted prints" and "butter yellow" 12+ months before runway saturation. Brands using the model reduced trend-miss markdowns by up to 30%.</div></td>
-        <td><div class="case-expand" id="c2-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c2">
-        <div class="cdi" style="padding:0 2rem">
-          <div>
-            <div class="cd-label">How Heuritech Works</div>
-            <div class="cd-body">Heuritech, founded in Paris, built a proprietary image recognition engine that analyses over 3 million social media images per day across Instagram, Pinterest, TikTok and street-style databases, using computer vision to detect micro-trends at the garment attribute level: silhouette, colour family, print motif, fabric texture, and styling cues.<br/><br/>Unlike traditional trend agencies (WGSN, Peclers) that rely on human curators attending trade shows, Heuritech's algorithm detects statistical acceleration, which is the rate at which a visual attribute appears more frequently before it is consciously noticed by the market. This gives brands a 6–18 month early signal window.</div>
-            <div class="mini-chart" style="margin-top:1rem">
-              <div class="mini-chart-title">Heuritech Signal vs. Runway Confirmation (months ahead)</div>
-              <div class="bar-row"><div class="bar-label">Butter Yellow</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="80%"></div></div><div class="bar-val">+16mo</div></div>
-              <div class="bar-row"><div class="bar-label">Dotted Prints</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="70%"></div></div><div class="bar-val">+14mo</div></div>
-              <div class="bar-row"><div class="bar-label">Ballet Flats</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="60%"></div></div><div class="bar-val">+12mo</div></div>
-              <div class="bar-row"><div class="bar-label">Sheer Layers</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="55%"></div></div><div class="bar-val">+11mo</div></div>
-              <div class="bar-row"><div class="bar-label">Quiet Luxury</div><div class="bar-track"><div class="bar-fill" style="width:0%;background:#c9a96e" data-w="45%"></div></div><div class="bar-val">+9mo</div></div>
-            </div>
-          </div>
-          <div>
-            <div class="cd-label">Commercial Application</div>
-            <div class="cd-body">Heuritech's clients include LVMH, Adidas, Lacoste, and Carrefour's apparel divisions. The platform delivers three outputs brands use operationally:<br/><br/><strong style="color:var(--black)">Trend Probability Scores:</strong> Each detected attribute receives a 12-month adoption forecast (niche → emerging → mainstream → declining) allowing buyers to stage order quantities by risk tier.<br/><br/><strong style="color:var(--black)">Regional Velocity Maps:</strong> The same trend travels at different speeds in Paris vs. Seoul vs. New York. Regional velocity data allows localised assortment decisions rather than global buys.<br/><br/><strong style="color:var(--black)">Markdown Risk Alerts:</strong> When a trend's adoption curve plateaus earlier than forecast, buyers receive an alert, enabling early price action before margin erosion.<br/><br/>The strategic implication for trade marketing: trend intelligence is now a pre-season commercial tool, not a post-season post-mortem.</div>
-          </div>
-          <div>
-            <div class="cd-label">Proven Impact</div>
-            <div class="cd-metrics">
-              <div class="dm"><span class="dm-k">Butter Yellow: Lead Time</span><span class="dm-v">16 months early</span></div>
-              <div class="dm"><span class="dm-k">Dotted Prints: Lead Time</span><span class="dm-v">14 months early</span></div>
-              <div class="dm"><span class="dm-k">Markdown Reduction</span><span class="dm-v">Up to 30%</span></div>
-              <div class="dm"><span class="dm-k">Images Analysed / Day</span><span class="dm-v">3M+</span></div>
-              <div class="dm"><span class="dm-k">Clients</span><span class="dm-v">LVMH, Adidas, Lacoste</span></div>
-              <div class="dm"><span class="dm-k">Forecast Window</span><span class="dm-v">6–18 months</span></div>
-              <div class="dm"><span class="dm-k">Method</span><span class="dm-v">Computer vision + CV acceleration scoring</span></div>
-              <div class="dm"><span class="dm-k">Founded</span><span class="dm-v">Paris, 2015</span></div>
-            </div>
-          </div>
-        </div>
-      </div></td></tr>
-
-      <!-- CASE 05: CESIM -->
-      <tr class="case-row" onclick="toggleCase('c3')">
-        <td style="padding-left:4rem"><div class="case-num">05</div></td>
-        <td><div class="case-title-cell">Cesim Marketing Simulation: Ranked #1 of 15</div><div class="case-sub">Paris School of Business · 2024–2025</div></td>
-        <td><span class="chip">Trade Strategy</span></td>
-        <td><div class="case-result">First place out of 15 teams. Contrarian trade-first investment model outperformed all competitors on market share and margin.</div></td>
-        <td><div class="case-expand" id="c3-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c3">
-        <div class="cdi" style="padding:0 2rem">
-          <div><div class="cd-label">The Challenge</div><div class="cd-body">Full Cesim B2B marketing simulation requiring real-time decisions across pricing, trade investment, distribution channel prioritisation, and promotional planning. 15 teams competed over multiple rounds with panel data updated each cycle, replicating the IRI/Nielsen distributor panel environment of real trade marketing.</div></div>
-          <div><div class="cd-label">The Strategy</div><div class="cd-body">Identified all 14 competing teams followed the same playbook: heavy consumer advertising, low trade investment. Built a contrarian model redirecting 40%+ of marketing budget toward trade, including POS activation, distributor incentives and channel placement. Created disproportionate shelf presence and distribution depth at lower cost-per-trial, compounding over every round.</div></div>
-          <div>
-            <div class="cd-label">Outcomes</div>
-            <div class="cd-metrics">
-              <div class="dm"><span class="dm-k">Final Ranking</span><span class="dm-v">#1 / 15 teams</span></div>
-              <div class="dm"><span class="dm-k">Key Strategy</span><span class="dm-v">Trade-first model</span></div>
-              <div class="dm"><span class="dm-k">Trade Budget Reallocation</span><span class="dm-v">+40%</span></div>
-              <div class="dm"><span class="dm-k">Result</span><span class="dm-v">Highest cohort market share</span></div>
-            </div>
-          </div>
-        </div>
-      </div></td></tr>
-
-      <!-- CASE 06: NOCAPP -->
-      <tr class="case-row" onclick="toggleCase('c4')">
-        <td style="padding-left:4rem"><div class="case-num">06</div></td>
-        <td><div class="case-title-cell">NoCapp: Subscription Luxury Wig Brand</div><div class="case-sub">Blue Ocean Strategy · Brand Design · Go-To-Market · Paris School of Business · 2025</div></td>
-        <td><span class="chip ai">Brand Strategy</span></td>
-        <td><div class="case-result">Full brand and go-to-market concept for a subscription-based luxury wig company in France. Blue Ocean positioning across a €300M market with 10M+ potential customers. Three subscription tiers, three-channel distribution, full competitor and customer journey analysis.</div></td>
-        <td><div class="case-expand" id="c4-arrow">Expand ↓</div></td>
-      </tr>
-      <tr class="case-detail-row"><td colspan="5"><div class="case-detail" id="c4">
-        <div class="cdi" style="padding:0 2rem">
-          <div>
-            <div class="cd-label">The Strategic Brief</div>
-            <div class="cd-body">NoCapp is a premium subscription-based wig company offering 100% ethically sourced human hair wigs for women and men aged 16 to 50 in France. The brief was to build a full brand strategy and go-to-market plan using Blue Ocean Strategy, creating a new market space rather than competing in the overcrowded synthetic wig segment.<br/><br/>
-            <strong style="color:var(--black)">Market Context:</strong> France's wig and hair extension market generates approximately €300M annually with 10M+ potential customers. Existing options are either synthetic and low quality, or medical-grade and sterile. No brand occupies the intersection of luxury, personalization, gender-inclusivity, and subscription convenience.<br/><br/>
-            <strong style="color:var(--black)">Blue Ocean Logic:</strong> Instead of competing on price or product range, NoCapp eliminates the stigma of wig-wearing by repositioning the category from a hair loss solution to a premium lifestyle accessory, targeting fashion consumers, medical patients, transgender and nonbinary clients, and professionals simultaneously.</div>
-          </div>
-          <div>
-            <div class="cd-label">Competitive Analysis & Positioning</div>
-            <div class="cd-body"><strong style="color:var(--black)">UniWigs (International online):</strong> Wide variety, affordable, strong e-commerce. Weaknesses: inconsistent quality, no personalization, no local fitting.<br/><br/>
-            <strong style="color:var(--black)">Any d'Avray (French luxury, physical):</strong> High-end reputation, medical certification, physical presence. Weaknesses: no subscription, outdated digital experience, no gender inclusivity, no youth appeal.<br/><br/>
-            <strong style="color:var(--black)">NoCapp's gap:</strong> The only brand that combines luxury quality + subscription convenience + personalization technology + gender inclusivity + ethical sourcing, all simultaneously. Neither competitor does more than two of these well.<br/><br/>
-            <strong style="color:var(--black)">Three subscription tiers designed:</strong> Signature (€179/mo), Haute Couture (€249/mo), Privée (€329/mo), each tier laddering up on personalization, quality (up to Remy human hair), and service (concierge, salon fittings, dedicated stylist).</div>
-          </div>
-          <div>
-            <div class="cd-label">Customer Journey & Go-To-Market</div>
-            <div class="cd-body"><strong style="color:var(--black)">Three-channel distribution:</strong> E-commerce (AI consultation quiz, virtual stylist, subscription box delivery) · Flagship stores in Paris, Lyon, Marseille (appointment or walk-in, live styling) · Sephora retail partnership (AR try-on in-store, gateway to subscription).<br/><br/>
-            <strong style="color:var(--black)">Customer journey mapped across 6 stages:</strong> Discovery → Evaluation → Purchase → Onboarding → Usage & Maintenance → Emotional Outcome. Pain points and aspirations are identified at each stage. For example, at the emotional outcome stage, the pain is embarrassment and disconnect from personal image; the aspiration is elevated confidence and lifestyle integration.<br/><br/>
-            <strong style="color:var(--black)">Supply chain:</strong> Ethical hair sourcing from India, Vietnam, and Brazil · EU-based handcrafting for quality control · Colissimo/DHL fulfillment · Shopify + CRM + AR tech stack.</div>
-            <div class="cd-metrics" style="margin-top:1rem">
-              <div class="dm"><span class="dm-k">Market Size (France)</span><span class="dm-v">€300M / yr</span></div>
-              <div class="dm"><span class="dm-k">Addressable Customers</span><span class="dm-v">10M+</span></div>
-              <div class="dm"><span class="dm-k">Subscription Tiers</span><span class="dm-v">3 (€179–€329/mo)</span></div>
-              <div class="dm"><span class="dm-k">Distribution Channels</span><span class="dm-v">3 (D2C, Flagship, Sephora)</span></div>
-              <div class="dm"><span class="dm-k">Strategic Framework</span><span class="dm-v">Blue Ocean Strategy</span></div>
-              <div class="dm"><span class="dm-k">Target Segments</span><span class="dm-v">4 (Fashion, Medical, Trans/NB, Professional)</span></div>
-              <div class="dm"><span class="dm-k">Role</span><span class="dm-v">Group project lead at PSB, 2025</span></div>
-            </div>
-          </div>
-        </div>
-      </div></td></tr>
-
-    </tbody>
-  </table>
-</div>
-
-<!-- MOCK CAMPAIGNS -->
-<div id="campaign" class="section" style="padding:0;max-width:none;">
-  <div class="campaign-shell">
-    <div class="camp-bg"></div>
-    <div class="camp-inner">
-      <div class="slabel" style="margin-bottom:0.8rem"><span class="slabel-num" style="color:var(--gold)">03</span><div class="slabel-rule" style="background:rgba(255,255,255,0.09)"></div><h2 class="slabel-text" style="color:var(--off-white)">Mock Campaigns</h2></div>
-      <p class="camp-sub" style="margin-bottom:2rem">Three collection launch campaigns sharing the same strategic discipline, across three different segments with radically different budgets and mechanics. Each built to industry-standard spend benchmarks.</p>
-
-      <!-- SEGMENT TABS -->
-      <div class="seg-tabs">
-        <button class="seg-tab active" onclick="showSeg('luxury',this)">
-          <span class="seg-tab-label">Segment 01</span>
-          <span class="seg-tab-name">Luxury</span>
-          <span class="seg-tab-budget">€2.5M – €8M</span>
-        </button>
-        <button class="seg-tab" onclick="showSeg('premium',this)">
-          <span class="seg-tab-label">Segment 02</span>
-          <span class="seg-tab-name">Premium</span>
-          <span class="seg-tab-budget">€400K – €1.2M</span>
-        </button>
-        <button class="seg-tab" onclick="showSeg('fastfashion',this)">
-          <span class="seg-tab-label">Segment 03</span>
-          <span class="seg-tab-name">Fast Fashion</span>
-          <span class="seg-tab-budget">€80K – €250K</span>
-        </button>
       </div>
-
-      <!-- ── LUXURY ── -->
-      <div class="seg-panel" id="seg-luxury">
-        <div class="camp-kicker" style="margin-top:2rem">Luxury Collection Launch · SS26</div>
-        <h3 class="camp-headline">« <em>La Matière</em> Noire »</h3>
-        <p class="camp-sub">A 9-month global launch campaign for a Parisian maison's SS26 womenswear collection. Distributed across 12 markets. Zero discounting. Heritage as the only currency.</p>
-        <div class="camp-meta">
-          <div><div class="cm-k">Brand Archetype</div><div class="cm-v">Parisian Luxury Maison (LVMH / Kering tier)</div></div>
-          <div><div class="cm-k">Total Campaign Budget</div><div class="cm-v">€5.2M</div></div>
-          <div><div class="cm-k">Media Spend</div><div class="cm-v">€2.8M (54%): Print, OOH, Digital Editorial</div></div>
-          <div><div class="cm-k">Events &amp; Experiences</div><div class="cm-v">€1.1M (21%): Runway, Press Days, Client Ateliers</div></div>
-          <div><div class="cm-k">Influencer &amp; PR</div><div class="cm-v">€600K (12%): Tier-1 KOLs, International Press</div></div>
-          <div><div class="cm-k">Retail &amp; VM</div><div class="cm-v">€700K (13%): Flagship Windows, POS, Pop-Ups</div></div>
-          <div><div class="cm-k">Duration</div><div class="cm-v">9 months (Oct 25 → Jun 26)</div></div>
-          <div><div class="cm-k">Markets</div><div class="cm-v">Paris, London, Milan, Dubai, Tokyo, NYC + 7 more</div></div>
+      <div class="exp-item">
+        <div>
+          <div class="exp-date">Apr 2021 &mdash; Jul 2021</div>
+          <div class="exp-co">ClearTax India</div>
+          <div class="exp-geo">India &middot; Remote</div>
+          <div class="exp-chips"><span class="exp-chip chip-pre">Sales Ops</span></div>
         </div>
-        <div class="phases">
-          <div class="phase"><div class="ph-q">Phase 1: Mystique (Oct to Nov)</div><div class="ph-t">Create Desire Before Visibility</div><div class="ph-b">Teaser campaign via invitation-only maison newsletters and select editorial placements in Vogue FR, System, AnOther. Zero product shown, only atmosphere. Private preview ateliers for 80 top clients in Paris and Dubai. Runway presentation seating strategy briefed to PR agency.</div></div>
-          <div class="phase"><div class="ph-q">Phase 2: Révélation (Jan to Feb)</div><div class="ph-t">SS26 Runway &amp; Global Press</div><div class="ph-b">Paris Fashion Week runway with a €380K production budget. 220 press and buyer attendees. Immediate global editorial distribution. Flagship window installations in 8 cities simultaneous to show. Tier-1 KOL seeding (5 global, 12 regional), gifted looks with no paid post requirement.</div></div>
-          <div class="phase"><div class="ph-q">Phase 3: Désir (Mar to Apr)</div><div class="ph-t">Build the Waiting List</div><div class="ph-b">Collection drops in flagship boutiques only, with no e-commerce launch. Waiting list mechanic via SA outreach. In-store client events across 12 cities: champagne presentations, personal styling. OOH campaign in key luxury corridors: Avenue Montaigne, Bond Street, Fifth Avenue, DIFC Dubai.</div></div>
-          <div class="phase"><div class="ph-q">Phase 4: Permanence (May to Jun)</div><div class="ph-t">Sustain &amp; Archive</div><div class="ph-b">Selective e-commerce release of carry-forward pieces. Editorial retrospective in international press, positioning the collection as a cultural moment. Performance review: sell-through by SKU and market, client acquisition rate, press value (earned media vs. spend). Debrief for AW26 planning.</div></div>
+        <div>
+          <div class="exp-title">Sales Operations Intern</div>
+          <ul class="exp-bullets">
+            <li>Administered <strong>Salesforce CRM</strong> to manage and segment client data across active accounts and prospect pipelines.</li>
+            <li>Generated and distributed qualified leads to sales and product teams based on client revenue profiling and segmentation criteria.</li>
+            <li>Supported cross-functional coordination between sales, product, and operations teams through timely CRM reporting.</li>
+          </ul>
         </div>
-        <div class="camp-kpis">
-          <div class="ck"><div class="ck-num">€<span>5.2</span>M</div><div class="ck-label">Total Campaign Investment</div></div>
-          <div class="ck"><div class="ck-num">12</div><div class="ck-label">Global Markets</div></div>
-          <div class="ck"><div class="ck-num"><span>×</span>18</div><div class="ck-label">Target Earned Media ROI</div></div>
-          <div class="ck"><div class="ck-num">0<span>%</span></div><div class="ck-label">Discount Used</div></div>
-        </div>
-        <div class="budget-note">Industry benchmark: Top luxury maisons (Chanel, Dior, Saint Laurent) allocate 12–18% of annual revenue to marketing. A mid-tier maison at €40M revenue targets €5–7M per major collection launch. Source: Business of Fashion, McKinsey Luxury Report 2024.</div>
       </div>
-
-      <!-- ── PREMIUM ── -->
-      <div class="seg-panel" id="seg-premium" style="display:none">
-        <div class="camp-kicker" style="margin-top:2rem">Premium Collection Launch · AW25</div>
-        <h3 class="camp-headline">« <em>After</em> Hours »</h3>
-        <p class="camp-sub">A 6-month European and Middle East launch campaign for a premium contemporary womenswear brand's AW25 eveningwear collection. Multi-channel, conversion-focused, brand-building at scale.</p>
-        <div class="camp-meta">
-          <div><div class="cm-k">Brand Archetype</div><div class="cm-v">Premium Contemporary (Sandro / The Kooples / Reiss tier)</div></div>
-          <div><div class="cm-k">Total Campaign Budget</div><div class="cm-v">€780K</div></div>
-          <div><div class="cm-k">Paid Digital &amp; Social</div><div class="cm-v">€280K (36%): Meta, TikTok, Pinterest, Google</div></div>
-          <div><div class="cm-k">Influencer &amp; Creator</div><div class="cm-v">€175K (22%): Tier-2/3 KOLs, Content Creators</div></div>
-          <div><div class="cm-k">Retail Activation &amp; VM</div><div class="cm-v">€160K (21%): In-store, Concession POS, Pop-Ups</div></div>
-          <div><div class="cm-k">PR &amp; Press</div><div class="cm-v">€90K (12%): Showroom, Samples, Press Days</div></div>
-          <div><div class="cm-k">OOH &amp; Print</div><div class="cm-v">€75K (9%): Selective Urban OOH, Trade Press</div></div>
-          <div><div class="cm-k">Duration</div><div class="cm-v">6 months (Aug → Jan 26)</div></div>
+      <div class="exp-item">
+        <div>
+          <div class="exp-date">Oct 2020 &mdash; Dec 2020</div>
+          <div class="exp-co">PeeEmpro Exports</div>
+          <div class="exp-geo">Faridabad, India</div>
         </div>
-        <div class="phases">
-          <div class="phase"><div class="ph-q">Phase 1: Awareness (Aug to Sep)</div><div class="ph-t">Build Anticipation</div><div class="ph-b">Creator-led teaser content: 12 mid-tier influencers given early access to hero pieces. TikTok and Instagram Reels seeding, organic-first, amplified via paid spend on top of best-performing content. PR showroom opens to fashion editors and stylists. E-mail campaign to loyalty database with lookbook preview.</div></div>
-          <div class="phase"><div class="ph-q">Phase 2: Launch (Oct)</div><div class="ph-t">Omnichannel Drop</div><div class="ph-b">Simultaneous online and in-store collection drop. Paid social campaign activated across Meta and TikTok, retargeting warm audiences from the teaser phase. In-store VM refresh across 45 European doors. Press day event in Paris for 60 editors and stylists. OOH campaign in 3 cities: Paris, London, Dubai.</div></div>
-          <div class="phase"><div class="ph-q">Phase 3: Conversion (Nov to Dec)</div><div class="ph-t">Peak Trading Season</div><div class="ph-b">Performance marketing push across Google Shopping, Meta DPA and retargeting. Black Friday tactical promotion at 10%, protecting premium positioning. Gift-with-purchase mechanic in-store. CRM campaign: personalised styling recommendations to existing clients. Influencer gifting for Christmas content cycle.</div></div>
-          <div class="phase"><div class="ph-q">Phase 4: Review (Jan)</div><div class="ph-t">Analyse &amp; Brief SS26</div><div class="ph-b">Full channel attribution analysis: ROAS by platform, cost-per-acquisition, sell-through by category, influencer performance vs. spend. IRI panel and retail audit vs. competitors. Findings presented to commercial director. SS26 campaign brief drafted incorporating learnings.</div></div>
+        <div>
+          <div class="exp-title">Internship Trainee</div>
+          <ul class="exp-bullets">
+            <li>Assisted in production planning and quality control across apparel export operations, gaining hands-on exposure to garment manufacturing workflows and supply chain coordination.</li>
+          </ul>
         </div>
-        <div class="camp-kpis">
-          <div class="ck"><div class="ck-num">€<span>780</span>K</div><div class="ck-label">Total Campaign Investment</div></div>
-          <div class="ck"><div class="ck-num">45</div><div class="ck-label">Retail Doors Activated</div></div>
-          <div class="ck"><div class="ck-num"><span>×</span>4.5</div><div class="ck-label">Target Blended ROAS</div></div>
-          <div class="ck"><div class="ck-num">6</div><div class="ck-label">Month Campaign Window</div></div>
-        </div>
-        <div class="budget-note">Industry benchmark: Premium contemporary brands typically allocate 8–14% of seasonal revenue to campaign marketing. A brand at €8M seasonal turnover targets €640K–€1.1M per collection launch. Digital accounts for 35–45% of spend at this tier. Source: Euromonitor, Statista Fashion Marketing Report 2024.</div>
       </div>
-
-      <!-- ── FAST FASHION ── -->
-      <div class="seg-panel" id="seg-fastfashion" style="display:none">
-        <div class="camp-kicker" style="margin-top:2rem">Fast Fashion Drop Campaign · Week 18</div>
-        <h3 class="camp-headline">« <em>Now</em> or Never »</h3>
-        <p class="camp-sub">A 3-week high-velocity digital drop campaign for a fast fashion brand's summer transition collection. Speed, scale, and social-first execution. Budget optimised for maximum impression volume and conversion rate.</p>
-        <div class="camp-meta">
-          <div><div class="cm-k">Brand Archetype</div><div class="cm-v">Fast Fashion (Zara / H&amp;M / ASOS tier)</div></div>
-          <div><div class="cm-k">Total Campaign Budget</div><div class="cm-v">€145K</div></div>
-          <div><div class="cm-k">Paid Social &amp; Digital</div><div class="cm-v">€72K (50%): TikTok Ads, Meta, YouTube Shorts</div></div>
-          <div><div class="cm-k">Influencer / UGC</div><div class="cm-v">€35K (24%): Micro-influencers, UGC creators</div></div>
-          <div><div class="cm-k">Retail POS &amp; VM</div><div class="cm-v">€22K (15%): In-store signage, window, digital screens</div></div>
-          <div><div class="cm-k">Email &amp; CRM</div><div class="cm-v">€16K (11%): Database push, SMS, app notifications</div></div>
-          <div><div class="cm-k">Duration</div><div class="cm-v">3 weeks (hard launch to markdown trigger)</div></div>
-          <div><div class="cm-k">Drop Frequency</div><div class="cm-v">New styles added weekly during campaign window</div></div>
+      <div class="exp-item">
+        <div>
+          <div class="exp-date">May 2019 &mdash; Jul 2019</div>
+          <div class="exp-co">Pearl Global Industries</div>
+          <div class="exp-geo">Gurugram, India</div>
         </div>
-        <div class="phases">
-          <div class="phase"><div class="ph-q">Week 1: Ignition</div><div class="ph-t">Launch &amp; Seed</div><div class="ph-b">Day 1: app notification + email blast to 2M+ subscribers. TikTok paid campaign launches with 8 ad creatives tested simultaneously, budget weighted to top-performing within 48 hours. 40 micro-influencers (50K–300K followers) post within 72 hours of drop. In-store POS and window refresh overnight.</div></div>
-          <div class="phase"><div class="ph-q">Week 2: Amplify</div><div class="ph-t">Scale What's Working</div><div class="ph-b">Performance data reviewed daily. Top 3 ad creatives receive 70% of remaining budget. UGC repurposed from organic influencer content, with best-performing posts boosted via paid spend. Retargeting campaign activated for site visitors who didn't convert. Flash 20% discount for app-only members on slow-moving SKUs.</div></div>
-          <div class="phase"><div class="ph-q">Week 3: Harvest</div><div class="ph-t">Conversion Push &amp; Clearance</div><div class="ph-b">Final push on remaining stock. "Last chance" urgency messaging across email and push notifications. Meta DPA activated on abandoned cart segments. Any unsold stock is flagged for a markdown decision by day 21, with markdown rate KPI as the primary post-campaign metric alongside ROAS.</div></div>
-          <div class="phase"><div class="ph-q">Day 22: Debrief</div><div class="ph-t">Rapid Review &amp; Next Drop Brief</div><div class="ph-b">24-hour post-campaign debrief: ROAS by channel, sell-through by SKU, markdown rate, influencer CPE vs. paid CPM. Winning creative formats briefed into next drop immediately. Fast fashion campaign cycles repeat every 3 to 6 weeks, with learnings compounding rapidly.</div></div>
+        <div>
+          <div class="exp-title">Intern</div>
+          <ul class="exp-bullets">
+            <li>Supported operational planning and production floor coordination across a large-scale garment manufacturing facility, developing foundational understanding of lean manufacturing and industrial engineering practices.</li>
+          </ul>
         </div>
-        <div class="camp-kpis">
-          <div class="ck"><div class="ck-num">€<span>145</span>K</div><div class="ck-label">Total Campaign Investment</div></div>
-          <div class="ck"><div class="ck-num">3</div><div class="ck-label">Week Campaign Window</div></div>
-          <div class="ck"><div class="ck-num"><span>×</span>7</div><div class="ck-label">Target ROAS (Blended)</div></div>
-          <div class="ck"><div class="ck-num">40<span>+</span></div><div class="ck-label">Micro-Influencers Activated</div></div>
-        </div>
-        <div class="budget-note">Industry benchmark: Fast fashion brands allocate 3–6% of drop revenue to per-campaign marketing. A €3M drop budget targets €90K–€180K in campaign spend with blended ROAS targets of 5–9×. TikTok and Meta account for 45–60% of spend at this tier. Source: Meta Fashion Ads Report 2024, Influencer Marketing Hub 2024.</div>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- AI AGENTS -->
-<section id="ai-agents" class="section" style="max-width:none;padding-left:4rem;padding-right:4rem;background:var(--warm-white)">
-  <div class="slabel"><span class="slabel-num">04</span><div class="slabel-rule"></div><h2 class="slabel-text">AI Studio</h2></div>
-  <div class="agents-lede">
-    <div class="agents-lede-text">Three live multi-agent AI systems I've designed, prompted and deployed, each running a structured pipeline of specialist sub-agents that gather, analyse, and synthesise before delivering a verdict. These are production-grade tools demonstrating what AI-enabled operations looks like in practice: not single-prompt chatbots, but layered reasoning systems built for commercial use.</div>
-    <div class="agents-badge"><div class="ab-label">Demonstrated Capability</div><div class="ab-text">Multi-Agent Pipeline Design · Prompt Engineering · AI-Enabled Marketing, Consulting &amp; Digital Transformation Operations</div></div>
+<div id="cases" style="padding:5.5rem 0 0;background:var(--paper)">
+  <div class="section" style="padding-bottom:1rem">
+    <div class="section-header">
+      <span class="sh-num">03</span><div class="sh-rule"></div>
+      <h2 class="sh-title">Case Studies</h2>
+    </div>
   </div>
-  <div class="agents-grid">
-
-    <!-- AGENT 1: FASHION TREND NEWS -->
-    <div class="agent-card">
-      <div class="agent-head">
-        <div><div class="agent-num">Agent 01: Intelligence · 3-Stage Pipeline</div><div class="agent-name">Fashion Trend<br/>Daily Briefing</div></div>
-        <div class="agent-live"><span class="live-dot"></span>Live</div>
-      </div>
-      <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Signal Scout</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Brand Intel</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Commercial Verdict</div></div>
-      </div>
-      <div class="agent-desc">A 3-stage pipeline: Stage 1 (Signal Scout) maps social velocity, runway presence and demographic spread. Stage 2 (Brand Intelligence) identifies who's winning, who's late, and regional velocity differences. Stage 3 (Commercial Verdict) synthesises order-staging guidance and markdown risk into a single actionable recommendation.</div>
-      <div class="agent-chat">
-        <div class="chat-hist" id="trend-hist">
-          <div class="msg assistant"><div class="msg-role">Trend Briefing · 3-Stage Pipeline</div><div class="msg-bubble">Enter any fashion topic such as a trend, colour, silhouette, brand move or category, and I'll run all three pipeline stages: signal mapping, brand analysis, then a commercial verdict with timing and markdown risk.</div></div>
+  <div class="cases-grid">
+    <div class="case-item">
+      <div class="case-trigger" onclick="toggleCase('case1')">
+        <div class="case-num">01</div>
+        <div>
+          <div class="case-name">ERP and MES Digital Transformation at Scale</div>
+          <div class="case-sub-label">Solvei8 &middot; India, Vietnam, Bangladesh &middot; 2021&ndash;2024</div>
         </div>
-        <div class="typing" id="trend-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
-        <div class="chat-row">
-          <textarea class="chat-in" id="trend-input" rows="1" placeholder="e.g. Quiet luxury: signal strength and commercial outlook…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg('trend')}"></textarea>
-          <button class="chat-btn" id="trend-send" onclick="sendMsg('trend')">Brief me</button>
-        </div>
+        <div class="case-type pm">SaaS Implementation</div>
+        <div class="case-expand-btn" id="case1-arrow">Expand &darr;</div>
       </div>
-      <div class="suggestions">
-        <button class="sc" onclick="fillAndSend('trend','Butter yellow: where is it in the trend cycle and which brands are winning?')">Butter yellow cycle</button>
-        <button class="sc" onclick="fillAndSend('trend','Quiet luxury: is it peaking or still growing in 2025?')">Quiet luxury 2025</button>
-        <button class="sc" onclick="fillAndSend('trend','What micro-trends should a premium cheese brand watch in French retail for packaging?')">Packaging micro-trends</button>
+      <div class="case-body" id="case1">
+        <div class="case-grid">
+          <div>
+            <div class="cg-label">Challenge</div>
+            <div class="cg-text">Clients were operating with manual, paper-based production tracking across facilities of 500 to 5,000 employees and 5 to 100+ assembly lines. Reporting was delayed, defect visibility was poor, and supply chain transparency was insufficient for international retail and audit requirements. Implementations needed to work across three countries with different languages, operational cultures, and technology maturity levels. Managed 5 parallel programs simultaneously, each at different project stages.</div>
+          </div>
+          <div>
+            <div class="cg-label">Approach</div>
+            <div class="cg-text"><strong>Discovery and Scoping:</strong> Conducted As-Is process workshops. Mapped workflows, identified pain points, defined To-Be operational states.<br/><br/><strong>Planning:</strong> Developed project plans, risk registers, and milestone trackers for each concurrent deployment. Maintained visibility through steering committee meetings.<br/><br/><strong>Implementation:</strong> Owned full delivery lifecycle covering ERP and MES configuration, UAT coordination, go-live management, and post-implementation review.<br/><br/><strong>Change Management:</strong> Built user adoption programs scaling training from 10-person specialist sessions to 300+ line worker rollouts.</div>
+          </div>
+          <div>
+            <div class="cg-label">Measured Outcomes</div>
+            <div class="cg-metrics">
+              <div class="metric-row"><span class="metric-key">Digital Coverage</span><span class="metric-val">100%</span></div>
+              <div class="metric-row"><span class="metric-key">Manual Reporting Reduction</span><span class="metric-val">75&ndash;85%</span></div>
+              <div class="metric-row"><span class="metric-key">Traceability Rate</span><span class="metric-val">97&ndash;100%</span></div>
+              <div class="metric-row"><span class="metric-key">DHU Reduction</span><span class="metric-val">3&ndash;5%</span></div>
+              <div class="metric-row"><span class="metric-key">Sites Deployed</span><span class="metric-val">40+ &middot; 0 failed</span></div>
+              <div class="metric-row"><span class="metric-key">End Users Trained</span><span class="metric-val">2,500+</span></div>
+              <div class="metric-row"><span class="metric-key">Production Lines</span><span class="metric-val">700+</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- AGENT 2: LUXURY COPYWRITER -->
-    <div class="agent-card">
-      <div class="agent-head">
-        <div><div class="agent-num">Agent 02: Content · 3-Stage Pipeline</div><div class="agent-name">Luxury<br/>Copywriter</div></div>
-        <div class="agent-live"><span class="live-dot"></span>Live</div>
-      </div>
-      <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Brand Decoder</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Copy Lab ×3</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Editorial Select</div></div>
-      </div>
-      <div class="agent-desc">A 3-stage creative pipeline: Stage 1 (Brand Decoder) identifies the product's sensory story and closest luxury house equivalent. Stage 2 (Copy Laboratory) generates three distinct copy directions (restraint, provocation, heritage), each with a headline and description. Stage 3 (Editorial Selection) selects the winning direction, explains why, and delivers a polished final version.</div>
-      <div class="agent-chat">
-        <div class="chat-hist" id="copy-hist">
-          <div class="msg assistant"><div class="msg-role">Luxury Copywriter · 3-Stage Pipeline</div><div class="msg-bubble">Give me a product name, brief or concept, and I'll run the full pipeline: decode the product's brand DNA, generate three creative directions, then select and refine the strongest into final copy ready for e-commerce, POS, or catalogue.</div></div>
+    <div class="case-item">
+      <div class="case-trigger" onclick="toggleCase('case2')">
+        <div class="case-num">02</div>
+        <div>
+          <div class="case-name">Pre-Sales to Implementation: Full Cycle Solution Consulting</div>
+          <div class="case-sub-label">Solvei8 &middot; South and Southeast Asia &middot; 2021&ndash;2024</div>
         </div>
-        <div class="typing" id="copy-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
-        <div class="chat-row">
-          <textarea class="chat-in" id="copy-input" rows="1" placeholder="e.g. Black cashmere turtleneck sweater, minimalist brand…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg('copy')}"></textarea>
-          <button class="chat-btn" id="copy-send" onclick="sendMsg('copy')">Write it</button>
-        </div>
+        <div class="case-type pm">Pre-Sales</div>
+        <div class="case-expand-btn" id="case2-arrow">Expand &darr;</div>
       </div>
-      <div class="suggestions">
-        <button class="sc" onclick="fillAndSend('copy','Aged comté cheese, 18 months, artisan producer, sold in Monoprix premium section')">Aged comté POS card</button>
-        <button class="sc" onclick="fillAndSend('copy','Black cashmere turtleneck, quiet luxury brand, €480 price point')">Black cashmere turtleneck</button>
-        <button class="sc" onclick="fillAndSend('copy','Natural linen blazer, sustainable fashion brand, unstructured silhouette')">Natural linen blazer</button>
+      <div class="case-body" id="case2">
+        <div class="case-grid">
+          <div>
+            <div class="cg-label">Context</div>
+            <div class="cg-text">Supported the full pre-sales cycle for new account acquisition across India, Vietnam, and Bangladesh. The challenge was demonstrating measurable ROI to factory directors at organisations of 500 to 5,000 employees who were skeptical of technology investment and needed clear commercial evidence before committing to platform adoption.</div>
+          </div>
+          <div>
+            <div class="cg-label">What I Did</div>
+            <div class="cg-text"><strong>Discovery:</strong> Ran As-Is workshops with operations and IT stakeholders to map current state and identify transformation opportunities.<br/><br/><strong>Demo and Proposal:</strong> Delivered tailored product demonstrations. Built ROI models quantifying projected DHU reduction, cost savings, and efficiency gains.<br/><br/><strong>Scoping:</strong> Developed implementation proposals and effort estimations setting realistic expectations for successful project delivery.<br/><br/><strong>Transition:</strong> Managed seamless handover from pre-sales to implementation, maintaining client relationship continuity throughout.</div>
+          </div>
+          <div>
+            <div class="cg-label">Key Outputs</div>
+            <div class="cg-metrics">
+              <div class="metric-row"><span class="metric-key">Clients Acquired</span><span class="metric-val">22+</span></div>
+              <div class="metric-row"><span class="metric-key">DHU Reduction Modelled</span><span class="metric-val">10&ndash;15%</span></div>
+              <div class="metric-row"><span class="metric-key">Cost Savings Delivered</span><span class="metric-val">12&ndash;15%</span></div>
+              <div class="metric-row"><span class="metric-key">Efficiency Gain</span><span class="metric-val">6&ndash;10%</span></div>
+              <div class="metric-row"><span class="metric-key">Geographies</span><span class="metric-val">India &middot; Vietnam &middot; Bangladesh</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- AGENT 3: COMPETITOR PRICE PULSE -->
-    <div class="agent-card">
-      <div class="agent-head">
-        <div><div class="agent-num">Agent 03: Competitive · 3-Stage Pipeline</div><div class="agent-name">Competitor Price<br/>Pulse Agent</div></div>
-        <div class="agent-live"><span class="live-dot"></span>Live</div>
-      </div>
-      <div class="agent-workflow">
-        <div class="wf-step"><div class="wf-node active">Input</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Market Scanner</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Scenario Model</div><div class="wf-arrow">→</div></div>
-        <div class="wf-step"><div class="wf-node active">Pricing Verdict</div></div>
-      </div>
-      <div class="agent-desc">A 3-stage pricing intelligence pipeline: Stage 1 (Market Scanner) maps competitor positions and assigns a Market Pressure Level. Stage 2 (Scenario Modeller) models three response scenarios (Hold, Tactical Markdown, Flash Sale) with volume, margin and brand-signal outcomes for each. Stage 3 (Pricing Verdict) delivers a single timed recommendation with leading indicators to monitor.</div>
-      <div class="agent-chat">
-        <div class="chat-hist" id="price-hist">
-          <div class="msg assistant"><div class="msg-role">Price Pulse · 3-Stage Pipeline</div><div class="msg-bubble">Tell me your product, price point, and what competitors are doing. I'll run three stages: scan the competitive landscape, model Hold vs. Markdown vs. Flash Sale scenarios, then deliver a clear pricing verdict with timing and what to watch.</div></div>
+    <div class="case-item">
+      <div class="case-trigger" onclick="toggleCase('case3')">
+        <div class="case-num">03</div>
+        <div>
+          <div class="case-name">Account Portfolio Management: 15+ Clients Post Go-Live</div>
+          <div class="case-sub-label">Solvei8 &middot; India, Vietnam, Bangladesh &middot; 2021&ndash;2024</div>
         </div>
-        <div class="typing" id="price-typing"><div class="tdot"></div><div class="tdot"></div><div class="tdot"></div></div>
-        <div class="chat-row">
-          <textarea class="chat-in" id="price-input" rows="1" placeholder="e.g. My premium olive oil is €18. Competitor A dropped to €14. Competitor B is sold out…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendMsg('price')}"></textarea>
-          <button class="chat-btn" id="price-send" onclick="sendMsg('price')">Analyse</button>
-        </div>
+        <div class="case-type">Customer Success</div>
+        <div class="case-expand-btn" id="case3-arrow">Expand &darr;</div>
       </div>
-      <div class="suggestions">
-        <button class="sc" onclick="fillAndSend('price','My premium cheese is €8.90. Competitor A dropped to €6.50 and Competitor B is sold out. Should I markdown or hold?')">Cheese pricing: hold or markdown?</button>
-        <button class="sc" onclick="fillAndSend('price','My cashmere sweater is €420. Two competitors have gone on sale at 30% off. It is January. What should I do?')">January sale: join or hold?</button>
-        <button class="sc" onclick="fillAndSend('price','New competitor entered our category 20% cheaper. Our brand is more premium. Flash sale or reposition?')">New low-price competitor</button>
+      <div class="case-body" id="case3">
+        <div class="case-grid">
+          <div>
+            <div class="cg-label">The Model</div>
+            <div class="cg-text">Post go-live, I transitioned from implementation lead to account owner, maintaining the ongoing relationship with each client across the full post-deployment lifecycle. The portfolio spanned 15+ accounts of varying size (500&ndash;5,000 employees, 5&ndash;100+ assembly lines) across three countries, each at different stages of platform maturity and product adoption.</div>
+          </div>
+          <div>
+            <div class="cg-label">Activities</div>
+            <div class="cg-text"><strong>Monthly Performance Reviews:</strong> Structured sessions reviewing KPI dashboard outputs covering DHU trends, efficiency indices, and maintenance uptime.<br/><br/><strong>Upsell Identification:</strong> Monitored product usage patterns to identify clients ready to expand across the platform suite.<br/><br/><strong>Escalation Management:</strong> Served as primary escalation point for platform issues and user adoption blockers.<br/><br/><strong>Training Refreshers:</strong> Delivered targeted re-training when new features launched or adoption metrics dropped.</div>
+          </div>
+          <div>
+            <div class="cg-label">Portfolio Snapshot</div>
+            <div class="cg-metrics">
+              <div class="metric-row"><span class="metric-key">Accounts Managed</span><span class="metric-val">15+</span></div>
+              <div class="metric-row"><span class="metric-key">Client Size Range</span><span class="metric-val">500&ndash;5,000 employees</span></div>
+              <div class="metric-row"><span class="metric-key">Review Cadence</span><span class="metric-val">Monthly + ad hoc</span></div>
+              <div class="metric-row"><span class="metric-key">Geographies</span><span class="metric-val">India, Vietnam, Bangladesh</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
-</section>
+</div>
 
-<!-- CV -->
-<section id="cv" class="section">
-  <div class="slabel"><span class="slabel-num">05</span><div class="slabel-rule"></div><h2 class="slabel-text">Curriculum Vitæ</h2></div>
-  <div class="cv-layout">
-    <div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">ERP / SaaS Platforms</div>
-        <span class="skill-pill saas-tag">Plani8 (Production Planning)</span><span class="skill-pill saas-tag">Tracki8 (Execution Tracking)</span><span class="skill-pill saas-tag">Maintaini8 (Maintenance)</span><span class="skill-pill saas-tag">OI Dashboards</span><span class="skill-pill saas-tag">ERP Integration</span><span class="skill-pill saas-tag">MES Configuration</span>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">Pre-Sales &amp; Implementation</div>
-        <span class="skill-pill saas-tag">Discovery Workshops</span><span class="skill-pill saas-tag">Product Demos</span><span class="skill-pill saas-tag">ROI Modelling</span><span class="skill-pill saas-tag">Proposal Building</span><span class="skill-pill saas-tag">Change Management</span><span class="skill-pill saas-tag">Workforce Training</span><span class="skill-pill saas-tag">Go-Live Management</span><span class="skill-pill saas-tag">KPI Sign-off</span>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">Customer Success</div>
-        <span class="skill-pill saas-tag">Account Management</span><span class="skill-pill saas-tag">Monthly QBRs</span><span class="skill-pill saas-tag">Upsell Identification</span><span class="skill-pill saas-tag">Escalation Handling</span><span class="skill-pill saas-tag">Renewal Management</span><span class="skill-pill saas-tag">Performance Reporting</span><span class="skill-pill saas-tag">Adoption Monitoring</span>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">Trade Marketing</div>
-        <span class="skill-pill">Field Activation</span><span class="skill-pill">POS Strategy</span><span class="skill-pill">Brand Communication</span><span class="skill-pill">Competitive Benchmarking</span><span class="skill-pill">Promotional Planning</span><span class="skill-pill">Merchandising</span><span class="skill-pill">IRI Panel</span>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">AI &amp; Digital Transformation</div>
-        <span class="skill-pill">Prompt Engineering</span><span class="skill-pill">Agentic Workflows</span><span class="skill-pill">Multi-Agent Systems</span><span class="skill-pill">AI Operations</span><span class="skill-pill">Power BI</span><span class="skill-pill">Excel Advanced</span><span class="skill-pill">KPI Dashboards</span><span class="skill-pill">Salesforce</span>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">Languages</div>
-        <div class="lang-item"><div class="lang-name">English <span>Fluent</span></div><div class="lang-track"><div class="lang-fill" style="width:95%"></div></div></div>
-        <div class="lang-item"><div class="lang-name">French <span>A2, Improving</span></div><div class="lang-track"><div class="lang-fill" style="width:28%"></div></div></div>
-        <div class="lang-item"><div class="lang-name">Hindi <span>Native</span></div><div class="lang-track"><div class="lang-fill" style="width:100%"></div></div></div>
-      </div>
-      <div class="cv-sb-block">
-        <div class="cv-sb-label">Education</div>
-        <p style="font-size:0.74rem;color:var(--black);margin-bottom:0.15rem">MSc Luxury &amp; Fashion Management</p>
-        <p style="font-size:0.54rem;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.9rem">Paris School of Business · 2024–2026</p>
-        <p style="font-size:0.74rem;color:var(--black);margin-bottom:0.15rem">B.FTech Fashion Technology</p>
-        <p style="font-size:0.54rem;color:var(--gold);letter-spacing:0.08em;text-transform:uppercase">NIFT New Delhi · 2016–2020</p>
-      </div>
-      <a href="./Harsh_Tanwar_CV.pdf" class="cv-dl" download>↓ &nbsp; Download Full CV</a>
+<section style="background:var(--warm);max-width:none;padding:5.5rem 3.5rem">
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="section-header">
+      <span class="sh-num">04</span><div class="sh-rule"></div>
+      <h2 class="sh-title">How I Work</h2>
     </div>
-    <div>
-      <div class="cv-section-divider">SaaS Consulting Experience</div>
-      <div class="cv-exp-item">
-        <div class="role-split"><span class="role-chip pre">Pre-Sales</span><span class="role-chip impl">Implementation</span><span class="role-chip csm">CSM</span></div>
-        <div class="cv-exp-top"><div class="cv-exp-title">Solution Consultant: Pre-Sales, Implementation and Customer Success</div><div class="cv-exp-date">Sept 2021 – Oct 2024</div></div>
-        <div class="cv-exp-co">Solvei8 · India, Vietnam &amp; Bangladesh</div>
-        <ul class="cv-bullets">
-          <li><strong>Pre-Sales:</strong> Ran As-Is discovery workshops and delivered tailored demos of Plani8 (production planning), Tracki8 (execution tracking), and Maintaini8 (maintenance automation) to factory directors at organisations of 500 to 5,000 employees, covering facilities from 5 to 100+ assembly lines across three countries.</li>
-          <li><strong>Pre-Sales:</strong> Built ROI models quantifying 10–15% DHU reduction, 12–15% cost savings, and 6–10% efficiency gains versus current-state operations, providing the commercial case that supported contract close across India, Vietnam, and Bangladesh.</li>
-          <li><strong>Implementation:</strong> Owned full post-contract delivery lifecycle, covering To-Be workflow design, ERP and MES integration configuration, web and mobile OI dashboard setup, and go-live coordination across 50+ sites, achieving 100% launch readiness on every activation with zero failed deployments.</li>
-          <li><strong>Implementation:</strong> Designed and delivered workforce training programmes scaled to site complexity, ranging from 10-person planning specialist sessions to 300+ line worker rollouts, with KPI sign-off at 3–5 months post go-live confirming sustained adoption and measurable improvement.</li>
-          <li><strong>CSM:</strong> Managed 15+ active client accounts post-deployment, running monthly QBRs with factory ops directors, presenting KPI dashboard analysis, identifying upsell opportunities across the platform suite, handling escalations, and owning renewal conversations across three geographies.</li>
-          <li><strong>CSM:</strong> Monitored platform adoption metrics to identify at-risk accounts early; delivered targeted re-training on new Solvei8 feature releases and after workforce turnover events to protect adoption KPIs.</li>
-          <li>Led a team of 4 consultants across concurrent multi-country deployments. Built executive Power BI and Excel dashboards for client-facing monthly reporting and internal account health tracking, enabling data-driven CSM decisions at scale.</li>
-          <li><strong>AI &amp; Digital Transformation:</strong> Designed and deployed multi-agent AI systems alongside consulting work, including trend intelligence briefers, luxury copywriting agents and retail pricing analysts, demonstrating the ability to identify AI-enabled efficiency opportunities and build production-grade tools independently.</li>
-        </ul>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="approach-num">01 &mdash; Discovery</div>
+        <div class="approach-title">Assess Before Acting</div>
+        <div class="approach-desc">Every project starts with thorough discovery. I run stakeholder workshops, map current state processes, identify risks and constraints, and define clear success criteria before any implementation begins. Assumptions get documented. Surprises get minimized.</div>
       </div>
-      <div class="cv-section-divider">Marketing &amp; Brand Experience</div>
-      <div class="cv-exp-item">
-        <div class="role-split"><span class="role-chip mktg">Trade Strategy</span></div>
-        <div class="cv-exp-top"><div class="cv-exp-title">Cesim Marketing Simulation: #1 Ranked Team</div><div class="cv-exp-date">2024–2025</div></div>
-        <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Ranked #1 out of 15 teams by identifying that all competing teams were running identical high-advertising, low-trade-investment playbooks, and built a contrarian model that redirected 40%+ of budget to trade activation. Achieved the highest market share and margin in the cohort across all simulation rounds.</li></ul>
+      <div class="approach-card">
+        <div class="approach-num">02 &mdash; Planning</div>
+        <div class="approach-title">Plans That Get Used</div>
+        <div class="approach-desc">I build project plans that are actually used: risk registers that get updated, milestone trackers that drive decisions, and status reports that tell the truth about progress. Planning is a living activity, not a one-time document.</div>
       </div>
-      <div class="cv-exp-item">
-        <div class="role-split"><span class="role-chip mktg">Brand Strategy</span></div>
-        <div class="cv-exp-top"><div class="cv-exp-title">NoCapp: Subscription Luxury Wig Brand (Group Project Lead)</div><div class="cv-exp-date">2025</div></div>
-        <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Led development of a full brand strategy and go-to-market plan for NoCapp, a premium subscription wig company targeting a €300M French market with 10M+ potential customers. Applied Blue Ocean Strategy to reposition the category from medical necessity to luxury lifestyle. Designed three subscription tiers (€179–€329/mo), a three-channel distribution model (D2C flagship stores, Sephora retail), and a six-stage customer journey framework mapping pain points to aspirational outcomes.</li></ul>
+      <div class="approach-card">
+        <div class="approach-num">03 &mdash; Stakeholders</div>
+        <div class="approach-title">Alignment at Every Level</div>
+        <div class="approach-desc">I manage stakeholders from C-suite to end user. Executive steering committees get clear business-impact reporting. Operations teams get practical guidance. End users get change management that makes adoption stick.</div>
       </div>
-      <div class="cv-exp-item">
-        <div class="role-split"><span class="role-chip mktg">Benchmarking</span></div>
-        <div class="cv-exp-top"><div class="cv-exp-title">Luxury Brand Competitive Intelligence Report</div><div class="cv-exp-date">2025</div></div>
-        <div class="cv-exp-co">Academic · Paris School of Business</div>
-        <ul class="cv-bullets"><li>Benchmarked 5 premium brands across pricing architecture, assortment strategy, and trade execution. Identified white space in mid-premium gifting underexploited by 2 of 5 brands in the trade channel, with commercial recommendations for channel investment reallocation.</li></ul>
+      <div class="approach-card">
+        <div class="approach-num">04 &mdash; Delivery</div>
+        <div class="approach-title">Go-Live Accountability</div>
+        <div class="approach-desc">I own go-live readiness. UAT is structured, exit criteria are defined, and post-implementation reviews confirm that outcomes are real and measurable. No project is complete until KPIs are confirmed against baseline.</div>
       </div>
-      <div class="cv-exp-item">
-        <div class="role-split"><span class="role-chip mktg">Analysis</span></div>
-        <div class="cv-exp-top"><div class="cv-exp-title">Category Analyst (Internship)</div><div class="cv-exp-date">Apr – Jul 2021</div></div>
-        <div class="cv-exp-co">ClearTax India</div>
-        <ul class="cv-bullets"><li>Conducted market and category analysis supporting commercial reporting. Built structured data summaries for senior stakeholders, developing the analytical rigour that later underpinned ROI modelling and KPI reporting at Solvei8.</li></ul>
+      <div class="approach-card">
+        <div class="approach-num">05 &mdash; Methodology</div>
+        <div class="approach-title">Hybrid by Default</div>
+        <div class="approach-desc">PMP certified with practical experience in agile, waterfall, and hybrid approaches. I adapt methodology to the project, not the other way around. What matters is delivery, not dogma.</div>
+      </div>
+      <div class="approach-card">
+        <div class="approach-num">06 &mdash; Improvement</div>
+        <div class="approach-title">Every Project Better</div>
+        <div class="approach-desc">I run retrospectives, capture lessons learned, and apply them systematically. Continuous improvement is built into every engagement through structured reflection and documented outcomes.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<section id="projects" style="background:var(--navy);padding:5.5rem 3.5rem">
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="section-header">
+      <span class="sh-num" style="color:var(--gold)">05</span>
+      <div class="sh-rule" style="background:rgba(255,255,255,0.1)"></div>
+      <h2 class="sh-title" style="color:var(--paper)">Independent Projects</h2>
+    </div>
+    <p style="font-size:0.78rem;line-height:1.9;color:rgba(245,243,239,0.4);font-weight:300;max-width:600px;margin-bottom:2.5rem">Built independently outside of professional engagements. This project demonstrates end-to-end delivery capability, technical initiative, and the ability to scope, execute, and ship a complex product from scratch without a team.</p>
+    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem">
+
+      <div class="project-card">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+          <div>
+            <div class="proj-num">Project 01 &middot; Featured</div>
+            <div class="proj-title">AI-Powered Client Intelligence and Consulting Tool</div>
+            <div class="proj-type">End-to-End Solo Delivery &middot; Claude API &middot; HTML &middot; Consulting Framework</div>
+            <div class="proj-desc">Designed, scoped, built, and deployed a standalone AI-powered consulting tool from scratch. The tool conducts structured client intelligence audits, produces competitive positioning analysis, and generates strategic recommendations in a format suitable for client-facing consulting engagements.<br/><br/>This project mirrors the core activities of a solution consultant in a pre-sales and advisory context: defining requirements, scoping the solution, designing the user experience, building the tool, and deploying it for real-world use. Built as a single-file HTML application using the Claude API for maximum portability and zero infrastructure overhead.</div>
+            <div class="proj-skills" style="margin-top:1.2rem">
+              <span class="proj-skill">Requirements Definition</span>
+              <span class="proj-skill">Solution Scoping</span>
+              <span class="proj-skill">End-to-End Delivery</span>
+              <span class="proj-skill">AI Tool Design</span>
+              <span class="proj-skill">Consulting Framework Design</span>
+              <span class="proj-skill">Rapid Prototyping</span>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0">
+            <div style="font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(184,151,90,0.25)">Project Delivery Snapshot</div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="font-size:0.64rem;color:rgba(245,243,239,0.4)">Delivery model</span><span style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--paper)">Solo, end-to-end</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="font-size:0.64rem;color:rgba(245,243,239,0.4)">Scope definition</span><span style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--paper)">Requirements to deployment</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="font-size:0.64rem;color:rgba(245,243,239,0.4)">Stack</span><span style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--paper)">HTML &middot; Claude API</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.06)"><span style="font-size:0.64rem;color:rgba(245,243,239,0.4)">Output format</span><span style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--paper)">Client-ready reports</span></div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0"><span style="font-size:0.64rem;color:rgba(245,243,239,0.4)">Status</span><span style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold)">Deployed and live</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications" style="background:var(--ink);padding:5.5rem 3.5rem">
+  <div style="max-width:1280px;margin:0 auto">
+    <div class="section-header">
+      <span class="sh-num">06</span>
+      <div class="sh-rule" style="background:rgba(255,255,255,0.08)"></div>
+      <h2 class="sh-title" style="color:var(--paper)">Certifications and Education</h2>
+    </div>
+
+    <!-- PMP FEATURED BLOCK -->
+    <div style="border:1px solid var(--gold-border);background:rgba(184,151,90,0.06);padding:2.5rem;margin-bottom:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
+      <div>
+        <div style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem">Primary Certification &middot; Project Management Institute</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--paper);line-height:1.1;margin-bottom:0.8rem">Project Management<br/>Professional (PMP)<span style="color:var(--gold)">&#174;</span></div>
+        <div style="font-size:0.6rem;color:rgba(245,243,239,0.4);line-height:1.9;font-weight:300">The PMP is the globally recognised gold standard in project management certification, awarded by the Project Management Institute (PMI). It validates demonstrated experience, knowledge, and performance in leading projects across predictive, agile, and hybrid environments.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Credential ID</span><span style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--gold);letter-spacing:0.08em">4379418</span></div>
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Issue Date</span><span style="font-size:0.62rem;color:rgba(245,243,239,0.6)">14 May 2026</span></div>
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Expiry Date</span><span style="font-size:0.62rem;color:rgba(245,243,239,0.6)">14 May 2029</span></div>
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Issuing Body</span><span style="font-size:0.62rem;color:rgba(245,243,239,0.6)">Project Management Institute (PMI)</span></div>
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Citizenship</span><span style="font-size:0.62rem;color:rgba(245,243,239,0.6)">India</span></div>
+        <div style="display:flex;justify-content:space-between;padding:0.9rem 0"><span style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,243,239,0.25)">Domains Covered</span><span style="font-size:0.62rem;color:rgba(245,243,239,0.6)">People &middot; Process &middot; Business Environment</span></div>
+      </div>
+    </div>
+
+    <!-- SUPPORTING CERTIFICATIONS -->
+    <div style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,243,239,0.25);margin-bottom:1rem;margin-top:2.5rem">Supporting Certifications</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:3.5rem">
+      <div class="cert-card">
+        <div class="cert-issuer">Google via Coursera</div>
+        <div class="cert-name">Google AI Essentials</div>
+        <div class="cert-date">Credential ID: DXNH372WR7ID</div>
+        <div style="font-size:0.58rem;line-height:1.75;color:rgba(245,243,239,0.35);margin-top:0.6rem;font-weight:300">Covers AI fundamentals, large language models, prompt design, and practical AI workflow integration in professional and operational contexts.</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-issuer">Be10x</div>
+        <div class="cert-name">Power BI Workshop</div>
+        <div class="cert-date">Issued January 2026</div>
+        <div style="font-size:0.58rem;line-height:1.75;color:rgba(245,243,239,0.35);margin-top:0.6rem;font-weight:300">Dashboard design, KPI reporting architecture, data modeling, and executive-level data visualization for operational project reporting and client-facing performance tracking.</div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,243,239,0.25);margin-bottom:1rem">Education</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem">
+      <div style="border:1px solid rgba(255,255,255,0.08);padding:2rem;position:relative">
+        <div style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem">Paris School of Business &middot; France</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--paper);margin-bottom:0.3rem;line-height:1.25">MSc, Luxury and Fashion Management</div>
+        <div style="font-size:0.55rem;color:rgba(245,243,239,0.3);margin-bottom:1rem">2024 &mdash; 2026 &middot; Paris, France</div>
+        <div style="font-size:0.58rem;line-height:1.8;color:rgba(245,243,239,0.35);font-weight:300;margin-bottom:1rem">Specialization in digital strategy, business transformation, and data-driven decision making. Focus on luxury and retail sector dynamics, global market expansion, and technology-enabled business models.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.35rem">
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Digital Strategy</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Business Transformation</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Data-Driven Decision Making</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Luxury and Retail Strategy</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Cesim Simulation #1 of 15</span>
+        </div>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,0.08);padding:2rem;position:relative">
+        <div style="font-family:'DM Mono',monospace;font-size:0.46rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem">National Institute of Fashion Technology &middot; India</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--paper);margin-bottom:0.3rem;line-height:1.25">Bachelor of Fashion Technology</div>
+        <div style="font-size:0.55rem;color:rgba(245,243,239,0.3);margin-bottom:1rem">2016 &mdash; 2020 &middot; New Delhi, India</div>
+        <div style="font-size:0.58rem;line-height:1.8;color:rgba(245,243,239,0.35);font-weight:300;margin-bottom:1rem">Technical foundation in garment manufacturing operations, production planning, and industrial engineering. Built deep understanding of the manufacturing environment that underpins ERP and MES implementation work across garment and apparel facilities.</div>
+        <div style="display:flex;flex-wrap:wrap;gap:0.35rem">
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Lean Manufacturing</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Supply Chain Management</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Textile Science</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Production Planning</span>
+          <span style="font-size:0.44rem;padding:0.2rem 0.5rem;border:1px solid rgba(255,255,255,0.1);color:rgba(245,243,239,0.3);letter-spacing:0.06em">Industrial Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2.5rem;text-align:center">
+      <a href="./Harsh_Tanwar_CV.pdf" class="btn-primary" download style="display:inline-block">&darr; &nbsp; Download Full CV</a>
+    </div>
+  </div>
+</section>
+
 <div id="contact">
   <div class="contact-shell">
     <div class="contact-glow"></div>
     <div class="contact-inner">
       <div>
-        <div class="contact-eyebrow">Open to opportunities · Europe &amp; Middle East · Available immediately</div>
-        <h2 class="contact-hl">Let's work<br/><em>together.</em></h2>
-        <p class="contact-sub">Three years of pre-sales, ERP implementation, and customer success in manufacturing SaaS, combined with genuine expertise in trade marketing, brand strategy, and AI-enabled operations. Based in Paris. Open immediately across Europe and the Middle East.</p>
-        <div class="contact-tracks">
-          <div class="ct-row"><span class="ct-pip"></span>Pre-Sales Consultant · Solution Consultant (Non-Tech SaaS)</div>
-          <div class="ct-row"><span class="ct-pip"></span>Customer Success Manager · Account Manager</div>
-          <div class="ct-row"><span class="ct-pip"></span>Implementation Consultant · Deployment Lead</div>
-          <div class="ct-row"><span class="ct-pip"></span>Trade Marketing Manager · Brand Strategy Consultant</div>
-          <div class="ct-row"><span class="ct-pip"></span>Digital Transformation Consultant</div>
-          <div class="ct-row"><span class="ct-pip"></span>AI Operations Lead · Agentic Workflow Designer</div>
-          <div class="ct-row"><span class="ct-pip"></span>Business Development · Partnerships</div>
+        <div class="contact-eyebrow">Open to opportunities &middot; Available globally</div>
+        <h2 class="contact-headline">Let's work<br/><em>together.</em></h2>
+        <p class="contact-body">PMP certified project manager and ERP implementation consultant based in Paris. Three years delivering complex transformation programs across manufacturing and retail operations in Asia. Open to project management, ERP and PLM consulting, pre-sales, and supply chain transformation roles globally.</p>
+        <div class="open-to-list">
+          <div class="ot-item"><span class="ot-dot"></span>Project Manager &middot; Program Manager</div>
+          <div class="ot-item"><span class="ot-dot"></span>ERP and PLM Implementation Consultant</div>
+          <div class="ot-item"><span class="ot-dot"></span>Pre-Sales Consultant &middot; Solution Consultant</div>
+          <div class="ot-item"><span class="ot-dot"></span>Supply Chain Transformation Consultant</div>
+          <div class="ot-item"><span class="ot-dot"></span>Business Analyst &middot; Delivery Lead</div>
+          <div class="ot-item"><span class="ot-dot"></span>Digital Transformation Consultant</div>
         </div>
       </div>
       <div class="contact-links">
-        <a href="mailto:harshtanwar1083@gmail.com" class="clr"><div><div class="clr-type">Email</div><div class="clr-val">harshtanwar1083@gmail.com</div></div><div class="clr-arrow">→</div></a>
-        <a href="tel:+33749739200" class="clr"><div><div class="clr-type">Phone</div><div class="clr-val">+33 7 49 73 92 00</div></div><div class="clr-arrow">→</div></a>
-        <a href="https://www.linkedin.com/in/harsh-tanwar-0a4383ba" target="_blank" class="clr"><div><div class="clr-type">LinkedIn</div><div class="clr-val">linkedin.com/in/harsh-tanwar-0a4383ba</div></div><div class="clr-arrow">→</div></a>
-        <a href="./Harsh_Tanwar_CV.pdf" class="clr" download><div><div class="clr-type">CV Download</div><div class="clr-val">Harsh_Tanwar_CV.pdf</div></div><div class="clr-arrow">↓</div></a>
+        <a href="mailto:harshtanwar1083@gmail.com" class="cl-item">
+          <div><div class="cl-label">Email</div><div class="cl-value">harshtanwar1083@gmail.com</div></div>
+          <div class="cl-arrow">&rarr;</div>
+        </a>
+        <a href="tel:+33749739200" class="cl-item">
+          <div><div class="cl-label">Phone</div><div class="cl-value">+33 7 49 73 92 00</div></div>
+          <div class="cl-arrow">&rarr;</div>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-tanwar-0a4383ba" target="_blank" class="cl-item">
+          <div><div class="cl-label">LinkedIn</div><div class="cl-value">linkedin.com/in/harsh-tanwar-0a4383ba</div></div>
+          <div class="cl-arrow">&rarr;</div>
+        </a>
+        <a href="./Harsh_Tanwar_CV.pdf" class="cl-item" download>
+          <div><div class="cl-label">CV Download</div><div class="cl-value">Harsh_Tanwar_CV.pdf</div></div>
+          <div class="cl-arrow">&darr;</div>
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 <footer>
-  <div class="footer-mark">Harsh Tanwar</div>
-  <div class="footer-copy">© 2025 · Pre-Sales · CSM · Implementation · Trade Marketing · AI Studio · Europe &amp; Middle East</div>
+  <div class="footer-left">Harsh Tanwar, PMP</div>
+  <div class="footer-right">Project Manager &middot; ERP Implementation Consultant &middot; Paris &middot; &copy; 2026</div>
 </footer>
 
 <script>
-// Nav
-window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('elevated',scrollY>40));
-
-// Cases toggle
-
-
-// Bar chart animation
-const barObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.querySelectorAll('.bar-fill').forEach(b=>{b.style.width=b.dataset.w||'0%'});
-      barObs.unobserve(e.target);
-    }
-  });
-},{threshold:0.3});
-document.querySelectorAll('.mini-chart').forEach(c=>barObs.observe(c));
-
-// Cases
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('elevated',scrollY>40);
+});
 function toggleCase(id){
-  const d=document.getElementById(id),a=document.getElementById(id+'-arrow'),isOpen=d.classList.contains('open');
-  document.querySelectorAll('.case-detail').forEach(x=>x.classList.remove('open'));
-  document.querySelectorAll('.case-expand').forEach(x=>x.textContent='Expand ↓');
-  if(!isOpen){d.classList.add('open');if(a)a.textContent='Close ↑'}
-}
-
-// AI AGENTS
-const SYSTEMS={
-  trend:`You are a senior fashion intelligence system running a THREE-STAGE multi-agent pipeline. You must always structure your response in exactly these three stages, clearly labelled:
-
-STAGE 1: SIGNAL SCOUT (Data Gathering Agent):
-Analyse the topic across these signal sources: social media velocity (TikTok, Instagram, Pinterest), runway appearances (recent seasons), street-style databases, retail sell-through patterns, and press coverage frequency. Assign a Signal Strength rating: NICHE / EMERGING / MAINSTREAM / DECLINING. Identify the top 3 platforms and demographics where the signal is strongest.
-
-STAGE 2: BRAND INTELLIGENCE (Market Analysis Agent):
-Identify which brands are moving on this trend, who is early, who is late and who has already peaked. Assess regional velocity differences (Europe vs US vs Asia). Flag any competing or adjacent trends that could displace this one. Identify the commercial window remaining.
-
-STAGE 3: COMMERCIAL VERDICT (Strategy Agent):
-Synthesise the above into a single actionable recommendation for a buyer or trade marketer. Include: order staging advice (how much to commit now vs. wait), the markdown risk if the trend plateaus, and a 1-sentence Actionable Verdict with timing.
-
-Write with authority and commercial precision. Total response 280–350 words. Use clear STAGE labels throughout.`,
-
-  copy:`You are a luxury copywriting system running a THREE-STAGE creative pipeline. Always structure your response with clear stage labels:
-
-STAGE 1: BRAND DECODER (Context Agent):
-Before writing, decode the product: identify its material story, the sensory experience it offers, the aspiration it represents, and the type of customer who would buy it. Name the luxury house whose aesthetic this most closely resembles (e.g. Celine, Bottega Veneta, Hermès). Do not write copy yet. Build the brief. 3–4 sentences.
-
-STAGE 2: COPY LABORATORY (Generation Agent):
-Generate THREE distinct copy directions for the product, each with a different emotional register (e.g. restraint / provocation / heritage). Each direction: one headline (under 8 words) + one description (50–70 words). Label them Direction A, B, C.
-
-STAGE 3: EDITORIAL SELECTION (Refinement Agent):
-Select the strongest direction and explain why it wins and what it communicates that the others don't. Then deliver a final, polished version of that direction, refined to its most precise form. This is the version ready for e-commerce, retail signage, or catalogue.
-
-Never use: luxurious, premium, exclusive, high-end, affordable, amazing, perfect. Write what those words mean. Total response 320–400 words.`,
-
-  price:`You are a retail pricing intelligence system running a THREE-STAGE analytical pipeline. Always structure your response with clear stage labels:
-
-STAGE 1: MARKET SCANNER (Data Agent):
-Analyse the competitive landscape described. Map each competitor's position: Are they marking down from strength (clearing excess) or weakness (desperate)? Is the category in a promotional cycle or a structural pricing shift? Assess whether the market is in a race-to-the-bottom or a bifurcation between value and premium. Assign a Market Pressure Level: LOW / MEDIUM / HIGH / CRITICAL.
-
-STAGE 2: SCENARIO MODELLER (Analysis Agent):
-Model three response scenarios with their commercial outcomes:
-Scenario A: Hold Price: What happens to volume, margin, and brand positioning? What is the risk?
-Scenario B: Tactical Markdown (10 to 20%): What is the likely volume uplift? What does it signal to the market? Can you recover price later?
-Scenario C: Flash Sale or Promotional Mechanic: What mechanic fits best (time-limited, channel-exclusive, bundle)? What is the exit strategy?
-
-STAGE 3: PRICING VERDICT (Strategy Agent):
-Deliver a single clear recommendation with timing. State: which scenario to execute, by when, at what level, and what to monitor in the following 2 weeks as a leading indicator of whether it's working.
-
-Be direct and commercially sharp. Total response 300–360 words. Use clear STAGE labels throughout.`
-};
-
-const histories={trend:[],copy:[],price:[]};
-
-// ─── AI AGENT PROXY ───────────────────────────────────────────────────────
-// The agents call a Cloudflare Worker proxy that holds your API key securely.
-// To activate: see the SETUP GUIDE comment at the bottom of this script.
-// Until configured, agents show a friendly setup message.
-const PROXY_URL =  'https://harsh-agent-proxy.harshtanwar1083.workers.dev/';
-
-async function sendMsg(id){
-  const input=document.getElementById(id+'-input');
-  const text=input.value.trim();if(!text)return;
-  const btn=document.getElementById(id+'-send');
-  btn.disabled=true;input.value='';
-  histories[id].push({role:'user',content:text});
-  renderMsg(id,'user',text);
-  document.getElementById(id+'-typing').classList.add('active');
-
-  if(!PROXY_URL){
-    // No proxy configured: show setup message
-    document.getElementById(id+'-typing').classList.remove('active');
-    renderMsg(id,'assistant','The AI agents require a one-time proxy setup to run on a hosted site.\n\nTo activate:\n1. Create a free Cloudflare Worker (workers.cloudflare.com)\n2. Paste the proxy code from the SETUP GUIDE comment in this file\n3. Add your Anthropic API key to the Worker\n4. Set window.AGENT_PROXY_URL to your Worker URL\n\nAlternatively, contact harshtanwar1083@gmail.com for a live demo.');
-    btn.disabled=false;
-    return;
+  const body=document.getElementById(id);
+  const arrow=document.getElementById(id+'-arrow');
+  const isOpen=body.classList.contains('open');
+  document.querySelectorAll('.case-body').forEach(b=>b.classList.remove('open'));
+  document.querySelectorAll('.case-expand-btn').forEach(a=>a.innerHTML='Expand &darr;');
+  if(!isOpen){
+    body.classList.add('open');
+    if(arrow)arrow.innerHTML='Close &uarr;';
   }
-
-  try{
-    const res=await fetch(PROXY_URL,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        system:SYSTEMS[id],
-        messages:histories[id],
-        max_tokens:1000
-      })
-    });
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const data=await res.json();
-    const reply=data.content?.[0]?.text||data.reply||'Unable to generate response.';
-    histories[id].push({role:'assistant',content:reply});
-    document.getElementById(id+'-typing').classList.remove('active');
-    renderMsg(id,'assistant',reply);
-  }catch(e){
-    document.getElementById(id+'-typing').classList.remove('active');
-    renderMsg(id,'assistant','Connection error. Please try again or contact harshtanwar1083@gmail.com for a live demo.');
-  }
-  btn.disabled=false;
 }
-
-/*
-═══════════════════════════════════════════════════════════════════
-  SETUP GUIDE: Activate AI Agents (5 minutes, free)
-═══════════════════════════════════════════════════════════════════
-
-1. Go to workers.cloudflare.com → sign up free → Create Worker
-
-2. Replace the default code with this:
-
-   export default {
-     async fetch(request) {
-       if (request.method === 'OPTIONS') {
-         return new Response(null, { headers: {
-           'Access-Control-Allow-Origin': '*',
-           'Access-Control-Allow-Methods': 'POST, OPTIONS',
-           'Access-Control-Allow-Headers': 'Content-Type'
-         }});
-       }
-       const body = await request.json();
-       const res = await fetch('https://api.anthropic.com/v1/messages', {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-           'x-api-key': YOUR_API_KEY_HERE,
-           'anthropic-version': '2023-06-01'
-         },
-         body: JSON.stringify({
-           model: 'claude-sonnet-4-20250514',
-           max_tokens: body.max_tokens || 1000,
-           system: body.system,
-           messages: body.messages
-         })
-       });
-       const data = await res.json();
-       return new Response(JSON.stringify(data), { headers: {
-         'Content-Type': 'application/json',
-         'Access-Control-Allow-Origin': '*'
-       }});
-     }
-   };
-
-3. Replace YOUR_API_KEY_HERE with your key from console.anthropic.com
-
-4. Deploy the Worker and copy the *.workers.dev URL
-
-5. In this file, find the line:
-      const PROXY_URL = window.AGENT_PROXY_URL || '';
-   and replace '' with your Worker URL in quotes, e.g.:
-      const PROXY_URL = 'https://harsh-agent-proxy.harshtanwar1083.workers.dev/';
-
-6. Re-upload index.html to GitHub → Netlify auto-redeploys.
-═══════════════════════════════════════════════════════════════════
-*/
-
-function showSeg(id,btn){
-  document.querySelectorAll('.seg-panel').forEach(p=>p.style.display='none');
-  document.querySelectorAll('.seg-tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById('seg-'+id).style.display='block';
-  btn.classList.add('active');
-}
-
-const agentNames={trend:'Trend Briefing',copy:'Luxury Copywriter',price:'Price Pulse'};
-function renderMsg(id,role,text){
-  const hist=document.getElementById(id+'-hist');
-  const div=document.createElement('div');
-  div.className='msg '+role;
-  const roleEl=document.createElement('div');
-  roleEl.className='msg-role';
-  roleEl.textContent=(role==='user'?'You':agentNames[id]);
-  const bodyEl=document.createElement('div');
-  bodyEl.className='msg-bubble';
-  // Style STAGE labels in agent responses
-  let formatted = text.replace(/\n/g,'<br/>');
-  formatted = formatted.replace(/(STAGE \d+:[^<:]+:?)/g,'<span style="display:inline-block;margin-top:0.7rem;margin-bottom:0.2rem;font-size:0.48rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);font-family:\'DM Sans\',sans-serif;font-weight:500;">$1</span>');
-  bodyEl.innerHTML=formatted;
-  div.appendChild(roleEl);
-  div.appendChild(bodyEl);
-  hist.appendChild(div);
-  div.style.animation='fadeMsg 0.3s ease forwards';
-  hist.scrollTop=hist.scrollHeight;
-}
-
-function fillAndSend(id,text){
-  const input=document.getElementById(id+'-input');
-  input.value=text;
-  sendMsg(id);
-}
-
 </script>
 </body>
 </html>
